@@ -547,10 +547,10 @@ export default function Home() {
                     </Button>
                     <div className="grid grid-cols-2 gap-4 mt-4">
                       <Button variant="outline" size="lg" asChild>
-                        <Link href="#">PrimeBiome  </Link>
+                        <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623">PrimeBiome  </Link>
                       </Button>
                       <Button variant="outline" size="lg" asChild>
-                        <Link href="#">FemiPro</Link>
+                        <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623">FemiPro</Link>
                       </Button>
                     </div>
                     <div className="flex items-center justify-center gap-2 mt-4">
@@ -559,7 +559,7 @@ export default function Home() {
                           <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
-                      <span className="text-sm">5.0 (2,500+ reviews)</span>
+                      <span className="text-sm">5.0 (95,000+ reviews)</span>
                     </div>
                     <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
                       <Badge variant="outline" className="bg-white flex items-center gap-1">
