@@ -24,6 +24,31 @@ export default function HeroSection() {
               Transform Your Health with ProDentim!
             </h1>
 
+            {/* Product image for mobile only - shown between title and description */}
+            <div className="flex justify-center lg:hidden relative my-8">
+              <div className="relative h-[350px] w-[280px] animate-float">
+                <div className="absolute top-10 -left-5 bg-white p-3 rounded-lg shadow-lg z-10 rotate-6">
+                  <div className="flex items-center gap-1">
+                    <Check className="h-4 w-4 text-green-600" />
+                    <span className="text-xs font-medium">Clinically Proven</span>
+                  </div>
+                </div>
+                <div className="absolute bottom-10 -right-5 bg-white p-3 rounded-lg shadow-lg z-10 -rotate-6">
+                  <div className="flex items-center gap-1">
+                    <Check className="h-4 w-4 text-green-600" />
+                    <span className="text-xs font-medium">3.5 Billion CFUs</span>
+                  </div>
+                </div>
+                <Image
+                  src="/prodentim.jpg"
+                  alt="ProDentim bottle"
+                  fill
+                  className="object-contain drop-shadow-2xl"
+                  priority
+                />
+              </div>
+            </div>
+
             <p className="text-xl text-muted-foreground md:text-2xl max-w-[600px]">
               Discover the #1 best-selling oral probiotic for healthy teeth and gums, plus more premium supplements for
               radiant skin and bladder health.
@@ -86,7 +111,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end relative">
+          {/* Product image for desktop only - hidden on mobile */}
+          <div className="hidden lg:flex justify-center lg:justify-end relative">
             <div className="absolute w-full h-full bg-gradient-to-br from-blue-100/50 to-green-100/50 rounded-full blur-3xl opacity-70 -z-10"></div>
             <div className="relative h-[400px] w-[320px] sm:h-[450px] sm:w-[350px] lg:h-[500px] lg:w-[400px] animate-float">
               <div className="absolute top-10 -left-10 bg-white p-3 rounded-lg shadow-lg z-10 rotate-6">
