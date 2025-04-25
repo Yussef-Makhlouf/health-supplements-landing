@@ -1,55 +1,55 @@
 'use client'
 import { useState, useEffect } from "react"
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 
 export default function CookiePolicyModal() {
-  const [open, setOpen] = useState(false)
+  const [show, setShow] = useState(false)
 
   useEffect(() => {
     // Check if user has already made a choice
     const cookieConsent = localStorage.getItem("cookieConsent")
     if (!cookieConsent) {
-      setOpen(true)
+      setShow(true)
     }
   }, [])
 
   const handleAccept = () => {
     localStorage.setItem("cookieConsent", "accepted")
-    setOpen(false)
+    setShow(false)
   }
 
   const handleDecline = () => {
     localStorage.setItem("cookieConsent", "declined")
-    setOpen(false)
+    setShow(false)
   }
 
+  if (!show) return null
+
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Cookie Policy</DialogTitle>
-          <DialogDescription className="text-muted-foreground">
-            This website uses cookies to personalize content and ads, provide social media features, and analyze our
-            traffic. By clicking Accept, you agree to the use of cookies.
-          </DialogDescription>
-        </DialogHeader>
-        <DialogFooter className="flex flex-col sm:flex-row gap-2">
-          <Button
-            variant="outline"
-            onClick={handleDecline}
-            className="w-full sm:w-auto order-1 sm:order-none"
-          >
-            Decline
-          </Button>
+    <div className="fixed bottom-4 right-4 max-w-xs bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-opacity duration-300 z-50 border border-gray-200 dark:border-gray-700">
+      <div className="p-4">
+        <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100">Cookie Policy</h3>
+        <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+          This website uses cookies to personalize content and analyze our traffic.
+        </p>
+        <div className="mt-4 flex flex-col gap-2">
           <Button
             onClick={handleAccept}
-            className="w-full sm:w-auto bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700"
+            className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700"
+            size="sm"
           >
             Accept
           </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+          <Button
+            variant="outline"
+            onClick={handleDecline}
+            className="w-full"
+            size="sm"
+          >
+            Decline
+          </Button>
+        </div>
+      </div>
+    </div>
   )
 }
