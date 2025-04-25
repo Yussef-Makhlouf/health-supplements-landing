@@ -11,7 +11,7 @@ interface ProductDetailsCardProps {
   description: string
   benefits: string[]
   ingredients: string[]
-  color: "blue" | "green" | "purple"
+  color: "purple" | "green" | "purple"
   imagePath: string
   learnMoreLink: string
 }
@@ -85,8 +85,8 @@ export default function ProductDetailsCard({
             </div>
           </div>
 
-          <Button variant="outline" className="mt-2" asChild>
-            <Link href={learnMoreLink}>  Learn More About This Offere </Link>
+          <Button variant="outline" className="mt-2 bg-primary" asChild>
+            <Link href={learnMoreLink} className="text-violet-50">Learn More About This Offere </Link>
           </Button>
         </CardContent>
       </div>

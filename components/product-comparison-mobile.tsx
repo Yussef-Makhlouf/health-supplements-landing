@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 interface ProductInfo {
@@ -17,6 +18,7 @@ interface ProductInfo {
   resultsTimeline: string
   pricePoint: string
   image: string
+  buyLink: string
 }
 
 export default function ProductComparisonMobile() {
@@ -35,6 +37,7 @@ export default function ProductComparisonMobile() {
       resultsTimeline: "2-4 weeks for noticeable results",
       pricePoint: "Premium",
       image: "/prodentim.jpg",
+      buyLink: "https://prodentim.com/buy",
     },
     primebiome: {
       name: "PrimeBiome ",
@@ -53,11 +56,12 @@ export default function ProductComparisonMobile() {
       resultsTimeline: "4-6 weeks for optimal results",
       pricePoint: "Premium",
       image: "/primebiome.jpg",
+      buyLink: "https://primebiome.com/buy",
     },
     femipro: {
       name: "FemiPro",
       tagline: "Bladder Health",
-      color: "blue",
+      color: "purple",
       benefits: [
         "Improves bladder control",
         "Supports urinary tract health",
@@ -71,17 +75,26 @@ export default function ProductComparisonMobile() {
       resultsTimeline: "1-2 weeks for initial comfort",
       pricePoint: "Premium",
       image: "/femipro.jpg",
+      buyLink: "https://femipro.com/buy",
     },
   }
 
   const colorMap: Record<string, string> = {
     blue: "bg-blue-50 text-blue-700",
     green: "bg-green-50 text-green-700",
+    purple: "bg-purple-100 text-purple-700",
   }
 
   const badgeColorMap: Record<string, string> = {
     blue: "bg-blue-100 text-blue-700",
     green: "bg-green-100 text-green-700",
+    purple: "bg-purple-100 text-purple-700",
+  }
+
+  const buttonColorMap: Record<string, string> = {
+    blue: "bg-blue-600 hover:bg-blue-700",
+    green: "bg-green-600 hover:bg-green-700",
+    purple: "bg-purple-600 hover:bg-purple-700",
   }
 
   const activeProduct = products[activeTab]
@@ -106,6 +119,7 @@ export default function ProductComparisonMobile() {
                   className="object-cover"
                 />
               </div>
+       
               <h3 className={`font-bold text-xl ${colorMap[products[productKey].color].split(" ")[1]}`}>
                 {products[productKey].name}
               </h3>
@@ -156,6 +170,15 @@ export default function ProductComparisonMobile() {
                   <h4 className="font-medium mb-1">Price Point</h4>
                   <Badge className={badgeColorMap[products[productKey].color]}>{products[productKey].pricePoint}</Badge>
                 </div>
+              </div>
+              
+              <div className="mt-6 flex justify-center">
+                <Button 
+                  className={`w-full max-w-xs ${buttonColorMap[products[productKey].color]}`}
+                  onClick={() => window.open(products[productKey].buyLink, '_blank')}
+                >
+                  Buy {products[productKey].name} Now
+                </Button>
               </div>
             </div>
           </TabsContent>

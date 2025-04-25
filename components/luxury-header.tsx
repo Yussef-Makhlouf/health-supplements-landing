@@ -72,7 +72,7 @@ export default function LuxuryHeader() {
           >
             <Image
               src="/logo.jpg"
-              alt="Beauty Real Mart Logo"
+              alt="BEAUTY REALM Logo"
               width={56}
               height={56}
               className="object-cover"
@@ -86,7 +86,7 @@ export default function LuxuryHeader() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Beauty Real Mart
+            BEAUTY REALM
           </motion.span>
         </div>
 
@@ -147,7 +147,7 @@ export default function LuxuryHeader() {
               >
                 <Image
                   src="/logo.jpg"
-                  alt="Beauty Real Mart Logo"
+                  alt="BEAUTY REALM Logo"
                   width={48}
                   height={48}
                   className="object-cover"
@@ -159,7 +159,7 @@ export default function LuxuryHeader() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1, duration: 0.3 }}
               >
-                Beauty Real Mart
+                BEAUTY REALM
               </motion.span>
             </div>
             

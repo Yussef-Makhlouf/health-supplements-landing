@@ -21,7 +21,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <HeroSection />
-        <SpecialOffer />
+   
 
         {/* ProDentim Feature Section */}
         <section id="prodentim" className="w-full py-16 md:py-24 lg:py-32 border-t border-gray-100 bg-white">
@@ -155,14 +155,14 @@ export default function Home() {
                   "Dandelion Root",
                   "Marshmallow Root & Pumpkin Seed",
                 ]}
-                color="blue"
+                color="purple"
                 imagePath="/femipro.jpg"
                 learnMoreLink="#"
               />
             </div>
           </div>
         </section>
-
+        <SpecialOffer />
         {/* Benefits Section */}
         <section className="w-full py-16 md:py-24 lg:py-32 border-t border-gray-100 bg-white">
           <div className="container px-4 md:px-6">
@@ -261,7 +261,7 @@ export default function Home() {
         {/* Comparison Table Section */}
         <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-blue-50 via-white to-green-50 border-t border-gray-100">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="flex flex-col items-center justify-center space-y-4 text-">
               <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none px-3 py-1.5">
                 PRODUCT COMPARISON
               </Badge>
@@ -293,7 +293,9 @@ export default function Home() {
                             className="object-contain"
                           />
                         </div>
+                        <Link href='https://prodentim24.com/text.php#aff=lifestylemedicine623'>
                         <span className="font-bold text-primary text-xl">ProDentim</span>
+                        </Link>
                         <span className="text-sm text-muted-foreground">Oral Probiotic</span>
                       </div>
                     </th>
@@ -307,11 +309,14 @@ export default function Home() {
                             className="object-contain"
                           />
                         </div>
+                        <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623">
                         <span className="font-bold text-green-700 text-xl">PrimeBiome </span>
+                        </Link>
+                        
                         <span className="text-sm text-muted-foreground">Skin & Gut Health</span>
                       </div>
                     </th>
-                    <th className="p-6 text-center bg-blue-50 border-b">
+                    <th className="p-6 text-center bg-purple-50 border-b">
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
@@ -321,7 +326,9 @@ export default function Home() {
                             className="object-contain"
                           />
                         </div>
-                        <span className="font-bold text-blue-700 text-xl">FemiPro</span>
+                        <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623">
+                        <span className="font-bold text-purple-700 text-xl">FemiPro</span>
+                        </Link>
                         <span className="text-sm text-muted-foreground">Bladder Health</span>
                       </div>
                     </th>
@@ -333,19 +340,19 @@ export default function Home() {
                     <td className="p-6 text-center border-b">
                       <ul className="space-y-2">
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-primary mr-2" />
+                          <Check className="h-4 w-4 text-blue-600 mr-2" />
                           <span>Improves gum health</span>
                         </li>
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-primary mr-2" />
+                          <Check className="h-4 w-4 text-blue-600 mr-2" />
                           <span>Freshens breath</span>
                         </li>
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-primary mr-2" />
+                            <Check className="h-4 w-4 text-blue-600 mr-2" />
                           <span>Strengthens tooth enamel</span>
                         </li>
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-primary mr-2" />
+                            <Check className="h-4 w-4 text-blue-600 mr-2" />
                           <span>Reduces plaque formation</span>
                         </li>
                       </ul>
@@ -373,19 +380,19 @@ export default function Home() {
                     <td className="p-6 text-center border-b">
                       <ul className="space-y-2">
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-blue-600 mr-2" />
+                            <Check className="h-4 w-4 text-purple-600 mr-2" />
                           <span>Improves bladder control</span>
                         </li>
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-blue-600 mr-2" />
+                          <Check className="h-4 w-4 text-purple-600 mr-2" />
                           <span>Supports urinary tract health</span>
                         </li>
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-blue-600 mr-2" />
+                          <Check className="h-4 w-4 text-purple-600 mr-2" />
                           <span>Reduces discomfort</span>
                         </li>
                         <li className="flex items-center justify-center">
-                          <Check className="h-4 w-4 text-blue-600 mr-2" />
+                          <Check className="h-4 w-4 text-purple-600 mr-2" />
                           <span>Promotes overall comfort</span>
                         </li>
                       </ul>
@@ -454,14 +461,32 @@ export default function Home() {
                       <Badge className="bg-green-100 text-green-700 px-3 py-1">Premium</Badge>
                     </td>
                     <td className="p-6 text-center">
-                      <Badge className="bg-blue-100 text-blue-700 px-3 py-1">Premium</Badge>
+                      <Badge className="bg-purple-100 text-purple-700 px-3 py-1">Premium</Badge>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="p-6 font-medium bg-gray-50">Availability</td>
+                    <td className="p-6 text-center">
+                      <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white" asChild>
+                        <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
+                      </Button>
+                    </td>
+                    <td className="p-6 text-center">
+                      <Button size="sm" className="bg-green-600 hover:bg-green-700 text-white" asChild>
+                        <Link href="https://kerassentials.co/text.php#aff=lifestylemedicine623">Shop Now</Link>
+                      </Button>
+                    </td>
+                    <td className="p-6 text-center">
+                      <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
+                        <Link href="https://synogutstore.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
+                      </Button>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="flex justify-center mt-12">
+            {/* <div className="flex justify-center mt-12">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
@@ -469,7 +494,7 @@ export default function Home() {
               >
                 <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
               </Button>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -535,7 +560,7 @@ export default function Home() {
                   </div>
                   <div className="space-y-4">
                     <div className="bg-blue-50 p-4 rounded-lg mb-6">
-                      <p className="font-medium text-center"> Buy 6 Bottles, Get 2 FREE  E-Books</p>
+                      <p className="font-medium text-center"> Order 6 Bottles and Get 2 FREE Bonuses!</p>
                       <p className="text-sm text-muted-foreground text-center">Plus Free Shipping</p>
                     </div>
                     <Button
@@ -583,62 +608,74 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="w-full border-t bg-white py-12 md:py-16">
-        <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+      <footer className="w-full border-t bg-white py-24 md:py-32 lg:py-40">
+        <div className="container px-6 md:px-8 lg:px-12">
+          <div className="grid grid-cols-1 gap-16 md:grid-cols-4">
+            <div className="space-y-8">
+              <h3 className="text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                 ProDentim
               </h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Premium health supplements for oral health, skin care, and bladder wellness. Crafted with the highest
                 quality ingredients for optimal results.
               </p>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold">Contact Us</h3>
-              <p className="text-sm text-muted-foreground">Email: elite@beautyrealmart.com</p>
-             
-              <div className="flex space-x-4">
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                ProDentim
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <Link href='https://beautyrealmart.com/contact-us/'>
+                  <h3 className="text-2xl font-bold">Contact Us</h3>
                 </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                FemiPro
-                </Link>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                PrimeBiome 
-                </Link>
+                <p className="text-lg text-muted-foreground">Email: elite@beautyrealmart.com</p>
+                <div className="flex space-x-8">
+                  <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                    ProDentim
+                  </Link>
+                  <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                    FemiPro
+                  </Link>
+                  <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                    PrimeBiome 
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold">Legal</h3>
-              <div className="grid grid-cols-1 gap-2">
-                <Link href="https://beautyrealmart.com/privacy-policy/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <div className="space-y-8">
+              <h3 className="text-2xl font-bold">Legal</h3>
+              <div className="grid grid-cols-1 gap-4">
+                <Link href="https://beautyrealmart.com/privacy-policy/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="https://beautyrealmart.com/terms-of-use/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/terms-of-use/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="https://beautyrealmart.com/refund_returns/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Refund Policy
+                <Link href="https://beautyrealmart.com/refund_returns/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                  Return Policy
                 </Link>
-                <p className="text-xs text-muted-foreground mt-4">
-                  * These statements have not been evaluated by the FDA. These products are not intended to diagnose,
-                  treat, cure, or prevent any disease. Consult a healthcare professional before use.
-                </p>
+                <Link href="https://beautyrealmart.com/disclaimer/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                  Disclaimer
+                </Link>
               </div>
             </div>
+            <div className="space-y-8">
+              <h3 className="text-2xl font-bold">About Us</h3>
+              <p className=" text-muted-foreground leading-relaxed">
+              Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.
+ 
+ The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues and always review the information carefully with your professional health care provider before using any of the protocols presented on this website and/or in the product sold here.
+  
+ Note: Results may vary from Person to Person
+ The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or endorsements of our website. If you click a merchant link and buy a product or service on their website, we may be paid a fee by the merchant.
+              </p>
+            </div>
           </div>
-          <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xs text-muted-foreground">
+          <div className="mt-16 border-t pt-16 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-base text-muted-foreground">
               &copy; {new Date().getFullYear()} ProDentim. All rights reserved.
             </p>
-            <div className="flex items-center gap-4 mt-4 md:mt-0">
-<Link href="https://beautyrealmart.com/" target="_blank">
-<img src="/logo.jpg" alt="Payment Method" className="w-20 h-20" />
-</Link>
-         
+            <div className="flex items-center gap-6 mt-6 md:mt-0">
+              <Link href="https://beautyrealmart.com/" target="_blank">
+                <img src="/logo.jpg" alt="Payment Method" className="w-32 h-32" />
+              </Link>
             </div>
           </div>
         </div>

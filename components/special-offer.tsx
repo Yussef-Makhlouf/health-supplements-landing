@@ -21,7 +21,8 @@ export default function SpecialOffer() {
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                   <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
                     <Gift className="h-4 w-4 mr-1" />
-                    Buy 6 Get 2 FREE eBooks + Free Shipping
+                    Order 6 Bottles
+and Get 2 FREE Bonuses!
                   </Badge>
                 </div>
                 <div className="inline-block">
@@ -78,7 +79,8 @@ export default function SpecialOffer() {
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                   <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
                     <Gift className="h-4 w-4 mr-1" />
-                    Buy 6 Get 2 FREE eBooks + Free Shipping
+                    Order 6 Bottles
+and Get 2 FREE Bonuses!
                   </Badge>
                 </div>
                 <div className="inline-block">
@@ -135,7 +137,8 @@ export default function SpecialOffer() {
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                   <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
                     <Gift className="h-4 w-4 mr-1" />
-                    Buy 6 Get 2 FREE eBooks + Free Shipping
+                    Order 6 Bottles
+and Get 2 FREE Bonuses!
                   </Badge>
                 </div>
                 <div className="inline-block">
