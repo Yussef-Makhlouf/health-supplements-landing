@@ -10,8 +10,6 @@ const inter = Inter({
   display: "swap",
 })
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
           {children}
           <CookiePolicyModal />
         </ThemeProvider>
