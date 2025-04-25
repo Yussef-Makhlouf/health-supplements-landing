@@ -614,13 +614,13 @@ export default function Home() {
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Legal</h3>
               <div className="grid grid-cols-1 gap-2">
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/privacy-policy/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/terms-of-use/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/refund_returns/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Refund Policy
                 </Link>
                 <p className="text-xs text-muted-foreground mt-4">
