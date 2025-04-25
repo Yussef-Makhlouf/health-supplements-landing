@@ -535,7 +535,7 @@ export default function Home() {
                   </div>
                   <div className="space-y-4">
                     <div className="bg-blue-50 p-4 rounded-lg mb-6">
-                      <p className="font-medium text-center">Buy 3 Bottles, Get 2 FREE</p>
+                      <p className="font-medium text-center"> Buy 6 Bottles, Get 2 FREE  E-Books</p>
                       <p className="text-sm text-muted-foreground text-center">Plus Free Shipping</p>
                     </div>
                     <Button
