@@ -608,73 +608,78 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="w-full border-t bg-white py-24 md:py-32 lg:py-40">
+      <footer className="w-full border-t bg-white py-12 md:py-16 lg:py-20">
         <div className="container px-6 md:px-8 lg:px-12">
-          <div className="grid grid-cols-1 gap-16 md:grid-cols-4">
-            <div className="space-y-8">
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+          {/* About Us Section - Separated and with horizontal text flow */}
+          <div className="mb-8 pb-8 border-b">
+            <h3 className="text-xl font-bold mb-4">About Us</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Note: Results may vary from Person to Person. The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or endorsements of our website.
+              </p>
+            </div>
+          </div>
+          
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                 ProDentim
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Premium health supplements for oral health, skin care, and bladder wellness. Crafted with the highest
                 quality ingredients for optimal results.
               </p>
             </div>
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <Link href='https://beautyrealmart.com/contact-us/'>
-                  <h3 className="text-2xl font-bold">Contact Us</h3>
+            <div className="space-y-4">
+              <Link href='https://beautyrealmart.com/contact-us/'>
+                <h3 className="text-xl font-bold">Contact Us</h3>
+              </Link>
+              <p className="text-base text-muted-foreground">Email: elite@beautyrealmart.com</p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                  ProDentim
                 </Link>
-                <p className="text-lg text-muted-foreground">Email: elite@beautyrealmart.com</p>
-                <div className="flex space-x-8">
-                  <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" className="text-lg text-muted-foreground hover:text-primary transition-colors">
-                    ProDentim
-                  </Link>
-                  <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623" className="text-lg text-muted-foreground hover:text-primary transition-colors">
-                    FemiPro
-                  </Link>
-                  <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623" className="text-lg text-muted-foreground hover:text-primary transition-colors">
-                    PrimeBiome 
-                  </Link>
-                </div>
+                <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                  FemiPro
+                </Link>
+                <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                  PrimeBiome 
+                </Link>
               </div>
             </div>
-            <div className="space-y-8">
-              <h3 className="text-2xl font-bold">Legal</h3>
-              <div className="grid grid-cols-1 gap-4">
-                <Link href="https://beautyrealmart.com/privacy-policy/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold">Legal</h3>
+              <div className="grid grid-cols-2 gap-2">
+                <Link href="https://beautyrealmart.com/privacy-policy/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="https://beautyrealmart.com/terms-of-use/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/terms-of-use/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="https://beautyrealmart.com/refund_returns/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/refund_returns/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Return Policy
                 </Link>
-                <Link href="https://beautyrealmart.com/disclaimer/" className="text-lg text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/disclaimer/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Disclaimer
                 </Link>
               </div>
             </div>
-            <div className="space-y-8">
-              <h3 className="text-2xl font-bold">About Us</h3>
-              <p className=" text-muted-foreground leading-relaxed">
-              Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.
- 
- The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues and always review the information carefully with your professional health care provider before using any of the protocols presented on this website and/or in the product sold here.
-  
- Note: Results may vary from Person to Person
- The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or endorsements of our website. If you click a merchant link and buy a product or service on their website, we may be paid a fee by the merchant.
-              </p>
-            </div>
           </div>
-          <div className="mt-16 border-t pt-16 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-base text-muted-foreground">
+          
+          <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} ProDentim. All rights reserved.
             </p>
-            <div className="flex items-center gap-6 mt-6 md:mt-0">
+            <div className="flex items-center gap-6 mt-2 md:mt-0">
               <Link href="https://beautyrealmart.com/" target="_blank">
-                <img src="/logo.jpg" alt="Payment Method" className="w-32 h-32" />
+                <img src="/logo.jpg" alt="Payment Method" className="w-24 h-24" />
               </Link>
             </div>
           </div>
