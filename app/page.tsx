@@ -133,7 +133,7 @@ export default function Home() {
                   "Vitamins C, E & Zinc",
                 ]}
                 color="green"
-                imagePath="/primebiome.jpg"
+                imagePath="/primebiome.png"
                 learnMoreLink="#"
               />
 
@@ -156,7 +156,7 @@ export default function Home() {
                   "Marshmallow Root & Pumpkin Seed",
                 ]}
                 color="purple"
-                imagePath="/femipro.jpg"
+                imagePath="/femipro.png"
                 learnMoreLink="#"
               />
             </div>
@@ -287,7 +287,7 @@ export default function Home() {
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
-                            src="/prodentim.jpg"
+                            src="/prodentim.png"
                             alt="ProDentim bottle"
                             fill
                             className="object-contain"
@@ -303,7 +303,7 @@ export default function Home() {
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
-                            src="/primebiome.jpg"
+                            src="/primebiome.png"
                             alt="PrimeBiome   bottle"
                             fill
                             className="object-contain"
@@ -320,7 +320,7 @@ export default function Home() {
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
-                            src="/femipro.jpg"
+                            src="/femipro.png"
                             alt="FemiPro bottle"
                             fill
                             className="object-contain"
@@ -679,7 +679,7 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-6 mt-2 md:mt-0">
               <Link href="https://beautyrealmart.com/" target="_blank">
-                <img src="/logo.jpg" alt="Payment Method" className="w-24 h-24" />
+                <img src="/logo.png" alt="Payment Method" className="w-24 h-24" />
               </Link>
             </div>
           </div>

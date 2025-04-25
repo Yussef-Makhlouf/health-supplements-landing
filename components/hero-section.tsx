@@ -40,7 +40,7 @@ export default function HeroSection() {
                   </div>
                 </div>
                 <Image
-                  src="/prodentim.jpg"
+                  src="/prodentim.png"
                   alt="ProDentim bottle"
                   fill
                   className="object-contain drop-shadow-2xl"
@@ -128,7 +128,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <Image
-                src="/prodentim.jpg"
+                src="/prodentim.png"
                 alt="ProDentim bottle"
                 fill
                 className="object-contain drop-shadow-2xl"

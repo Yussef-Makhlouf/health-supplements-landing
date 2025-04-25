@@ -33,7 +33,7 @@ and Get 2 FREE Bonuses!
 
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/prodentim.jpg"
+                    src="/prodentim.png"
                     alt="ProDentim bottle"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -91,7 +91,7 @@ and Get 2 FREE Bonuses!
 
                 <div className="relative h-[250px] w-full">
                   <Image
-                      src="/primebiome.jpg"
+                      src="/primebiome.png"
                     alt="PrimeBiome bottle"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -149,7 +149,7 @@ and Get 2 FREE Bonuses!
 
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/femipro.jpg"
+                    src="/femipro.png"
                     alt="FemiPro bottle"
                     fill
                     className="object-contain drop-shadow-2xl"

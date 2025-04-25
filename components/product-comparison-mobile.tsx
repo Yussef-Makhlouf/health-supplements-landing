@@ -36,7 +36,7 @@ export default function ProductComparisonMobile() {
       suitableFor: "Adults concerned about oral health",
       resultsTimeline: "2-4 weeks for noticeable results",
       pricePoint: "Premium",
-      image: "/prodentim.jpg",
+      image: "/prodentim.png",
       buyLink: "https://prodentim.com/buy",
     },
     primebiome: {
@@ -55,7 +55,7 @@ export default function ProductComparisonMobile() {
       suitableFor: "Adults seeking skin and digestive benefits",
       resultsTimeline: "4-6 weeks for optimal results",
       pricePoint: "Premium",
-      image: "/primebiome.jpg",
+      image: "/primebiome.png",
       buyLink: "https://primebiome.com/buy",
     },
     femipro: {
@@ -74,7 +74,7 @@ export default function ProductComparisonMobile() {
       suitableFor: "Women concerned about bladder health",
       resultsTimeline: "1-2 weeks for initial comfort",
       pricePoint: "Premium",
-      image: "/femipro.jpg",
+      image: "/femipro.png",
       buyLink: "https://femipro.com/buy",
     },
   }

@@ -71,7 +71,7 @@ export default function LuxuryHeader() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              src="/logo.jpg"
+              src="/logo.png"
               alt="BEAUTY REALM Logo"
               width={56}
               height={56}
@@ -146,7 +146,7 @@ export default function LuxuryHeader() {
                 whileHover="hover"
               >
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.png"
                   alt="BEAUTY REALM Logo"
                   width={48}
                   height={48}
