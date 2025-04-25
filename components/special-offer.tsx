@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronRight, Check, Gift, Truck, Book, BookAIcon } from "lucide-react"
+import { ChevronRight, Check, Gift, Truck, Book, BookAIcon, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
@@ -32,7 +32,7 @@ export default function SpecialOffer() {
 
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/placeholder.svg?height=250&width=200"
+                    src="/prodentim.jpg"
                     alt="ProDentim bottle"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -53,13 +53,20 @@ export default function SpecialOffer() {
                     Oral Health Support
                   </Badge>
                 </div>
-
+                <div className="flex items-center gap-2 pt-2">
+              <div className="flex">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-sm font-medium">5.0 (95,000+ reviews)</span>
+            </div>
                 <Button
                   size="lg"
                   className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white"
                   asChild
                 >
-                  <Link href="https://us-prodintim.com/" className="flex items-center justify-center gap-2">
+                  <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" className="flex items-center justify-center gap-2">
                     Buy ProDentim
                     <ChevronRight className="h-5 w-5" />
                   </Link>
@@ -82,7 +89,7 @@ export default function SpecialOffer() {
 
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/placeholder.svg?height=250&width=200"
+                      src="/primebiome.jpg"
                     alt="PrimeBiome bottle"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -103,7 +110,14 @@ export default function SpecialOffer() {
                     Skin & Gut Health
                   </Badge>
                 </div>
-
+                <div className="flex items-center gap-2 pt-2">
+              <div className="flex">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-sm font-medium">5.0 (19,479 + reviews)</span>
+            </div>
                 <Button
                   size="lg"
                   className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white"
@@ -132,7 +146,7 @@ export default function SpecialOffer() {
 
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/placeholder.svg?height=250&width=200"
+                    src="/femipro.jpg"
                     alt="FemiPro bottle"
                     fill
                     className="object-contain drop-shadow-2xl"
@@ -152,8 +166,16 @@ export default function SpecialOffer() {
                     <Check className="h-4 w-4 mr-1" />
                     Bladder Health
                   </Badge>
+                  
                 </div>
-
+                <div className="flex items-center gap-2 pt-2">
+              <div className="flex">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-sm font-medium">5.0 (18,369+ reviews)</span>
+            </div>
                 <Button
                   size="lg"
                   className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white"

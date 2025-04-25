@@ -90,7 +90,7 @@ export default function Home() {
                   className="mt-4 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                   asChild
                 >
-                  <Link href="https://us-prodintim.com/">Get ProDentim Today</Link>
+                  <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Get ProDentim Today</Link>
                 </Button>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function Home() {
                   "Vitamins C, E & Zinc",
                 ]}
                 color="green"
-                imagePath="/placeholder.svg?height=300&width=200"
+                imagePath="/primebiome.jpg"
                 learnMoreLink="#"
               />
 
@@ -156,7 +156,7 @@ export default function Home() {
                   "Marshmallow Root & Pumpkin Seed",
                 ]}
                 color="blue"
-                imagePath="/placeholder.svg?height=300&width=200"
+                imagePath="/femipro.jpg"
                 learnMoreLink="#"
               />
             </div>
@@ -287,7 +287,7 @@ export default function Home() {
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
-                            src="/placeholder.svg?height=100&width=100"
+                            src="/prodentim.jpg"
                             alt="ProDentim bottle"
                             fill
                             className="object-contain"
@@ -301,7 +301,7 @@ export default function Home() {
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
-                            src="/placeholder.svg?height=100&width=100"
+                            src="/primebiome.jpg"
                             alt="PrimeBiome   bottle"
                             fill
                             className="object-contain"
@@ -315,7 +315,7 @@ export default function Home() {
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
-                            src="/placeholder.svg?height=100&width=100"
+                            src="/femipro.jpg"
                             alt="FemiPro bottle"
                             fill
                             className="object-contain"
@@ -467,7 +467,7 @@ export default function Home() {
                 className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 asChild
               >
-                <Link href="https://us-prodintim.com/">Shop Now</Link>
+                <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
               </Button>
             </div>
           </div>
@@ -543,7 +543,7 @@ export default function Home() {
                       size="lg"
                       asChild
                     >
-                      <Link href="https://us-prodintim.com/">Shop ProDentim Now</Link>
+                      <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Shop ProDentim Now</Link>
                     </Button>
                     <div className="grid grid-cols-2 gap-4 mt-4">
                       <Button variant="outline" size="lg" asChild>
@@ -635,9 +635,10 @@ export default function Home() {
               &copy; {new Date().getFullYear()} ProDentim. All rights reserved.
             </p>
             <div className="flex items-center gap-4 mt-4 md:mt-0">
-              <img src="/placeholder.svg?height=30&width=50" alt="Payment Method" className="h-6" />
-              <img src="/placeholder.svg?height=30&width=50" alt="Payment Method" className="h-6" />
-              <img src="/placeholder.svg?height=30&width=50" alt="Payment Method" className="h-6" />
+<Link href="https://beautyrealmart.com/" target="_blank">
+<img src="/logo.jpg" alt="Payment Method" className="w-20 h-20" />
+</Link>
+         
             </div>
           </div>
         </div>

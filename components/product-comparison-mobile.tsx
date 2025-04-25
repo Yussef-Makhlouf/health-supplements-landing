@@ -16,6 +16,7 @@ interface ProductInfo {
   suitableFor: string
   resultsTimeline: string
   pricePoint: string
+  image: string
 }
 
 export default function ProductComparisonMobile() {
@@ -33,6 +34,7 @@ export default function ProductComparisonMobile() {
       suitableFor: "Adults concerned about oral health",
       resultsTimeline: "2-4 weeks for noticeable results",
       pricePoint: "Premium",
+      image: "/prodentim.jpg",
     },
     primebiome: {
       name: "PrimeBiome ",
@@ -50,6 +52,7 @@ export default function ProductComparisonMobile() {
       suitableFor: "Adults seeking skin and digestive benefits",
       resultsTimeline: "4-6 weeks for optimal results",
       pricePoint: "Premium",
+      image: "/primebiome.jpg",
     },
     femipro: {
       name: "FemiPro",
@@ -61,12 +64,13 @@ export default function ProductComparisonMobile() {
         "Reduces discomfort",
         "Promotes overall comfort",
       ],
-      ingredients: ["Cranberry Extract", "D-Mannose", "Hibiscus Extract", "Dandelion Root", "Marshmallow Root"],
+      ingredients: ["Cranberry Extract", "  D-Mannose", "Hibiscus Extract", "Dandelion Root", "Marshmallow Root"],
       usage: "1-2 capsules daily with water",
       probioticCount: "Not applicable",
       suitableFor: "Women concerned about bladder health",
       resultsTimeline: "1-2 weeks for initial comfort",
       pricePoint: "Premium",
+      image: "/femipro.jpg",
     },
   }
 
@@ -96,10 +100,10 @@ export default function ProductComparisonMobile() {
             <div className="flex flex-col items-center mb-6">
               <div className="relative h-24 w-24 mb-2">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src={products[productKey].image}
                   alt={`${products[productKey].name} bottle`}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
               <h3 className={`font-bold text-xl ${colorMap[products[productKey].color].split(" ")[1]}`}>

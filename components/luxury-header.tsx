@@ -27,7 +27,7 @@ export default function LuxuryHeader() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-            ProDentim
+            Beauty Real Mart
           </span>
         </div>
 
@@ -36,13 +36,13 @@ export default function LuxuryHeader() {
           <Link href="#" className="text-sm font-medium hover:text-primary transition-colors">
             Home
           </Link>
-          <Link href="#prodentim" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" className="text-sm font-medium hover:text-primary transition-colors">
             ProDentim
           </Link>
-          <Link href="#primebiome" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623" className="text-sm font-medium hover:text-primary transition-colors">
             PrimeBiome 
           </Link>
-          <Link href="#femipro" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623" className="text-sm font-medium hover:text-primary transition-colors">
             FemiPro
           </Link>
         </nav>
@@ -60,7 +60,7 @@ export default function LuxuryHeader() {
             className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
             asChild
           >
-            <Link href="https://us-prodintim.com/">Shop Now</Link>
+            <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
           </Button>
         </div>
       </div>
@@ -77,21 +77,21 @@ export default function LuxuryHeader() {
               Home
             </Link>
             <Link
-              href="#prodentim"
+              href="https://prodentim24.com/text.php#aff=lifestylemedicine623"
               className="block text-sm font-medium hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               ProDentim
             </Link>
             <Link
-              href="#primebiome"
+              href="http://primebiome24.com/text.php#aff=lifestylemedicine623"
               className="block text-sm font-medium hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
               PrimeBiome 
             </Link>
             <Link
-              href="#femipro"
+              href="http://femipro24.com/text.php#aff=lifestylemedicine623"
               className="block text-sm font-medium hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -101,7 +101,7 @@ export default function LuxuryHeader() {
               className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white"
               asChild
             >
-              <Link href="https://us-prodintim.com/" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" onClick={() => setMobileMenuOpen(false)}>
                 Shop Now
               </Link>
             </Button>

@@ -35,7 +35,7 @@ export default function HeroSection() {
                 className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 asChild
               >
-                <Link href="https://us-prodintim.com/" className="flex items-center gap-2 text-lg">
+                <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" className="flex items-center gap-2 text-lg">
                   Shop ProDentim Now
                   <ChevronRight className="h-5 w-5" />
                 </Link>
@@ -82,7 +82,7 @@ export default function HeroSection() {
                   <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <span className="text-sm font-medium">5.0 (2,500+ reviews)</span>
+              <span className="text-sm font-medium">5.0 (19,500+ reviews)</span>
             </div>
           </div>
 
@@ -102,7 +102,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <Image
-                src="/placeholder.svg?height=500&width=400"
+                src="/prodentim.jpg"
                 alt="ProDentim bottle"
                 fill
                 className="object-contain drop-shadow-2xl"
