@@ -35,7 +35,7 @@ export default function ProductComparisonMobile() {
       pricePoint: "Premium",
     },
     primebiome: {
-      name: "PrimeBiome Glow",
+      name: "PrimeBiome ",
       tagline: "Skin & Gut Health",
       color: "green",
       benefits: [

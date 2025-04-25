@@ -40,7 +40,7 @@ export default function LuxuryHeader() {
             ProDentim
           </Link>
           <Link href="#primebiome" className="text-sm font-medium hover:text-primary transition-colors">
-            PrimeBiome Glow
+            PrimeBiome 
           </Link>
           <Link href="#femipro" className="text-sm font-medium hover:text-primary transition-colors">
             FemiPro
@@ -88,7 +88,7 @@ export default function LuxuryHeader() {
               className="block text-sm font-medium hover:text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              PrimeBiome Glow
+              PrimeBiome 
             </Link>
             <Link
               href="#femipro"

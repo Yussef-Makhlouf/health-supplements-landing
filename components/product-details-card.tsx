@@ -86,7 +86,7 @@ export default function ProductDetailsCard({
           </div>
 
           <Button variant="outline" className="mt-2" asChild>
-            <Link href={learnMoreLink}>Learn More</Link>
+            <Link href={learnMoreLink}>  Learn More About This Offere </Link>
           </Button>
         </CardContent>
       </div>

@@ -11,6 +11,7 @@ import ProductComparisonMobile from "@/components/product-comparison-mobile"
 import LuxuryHeader from "@/components/luxury-header"
 import HeroSection from "@/components/hero-section"
 import ProductDetailsCard from "@/components/product-details-card"
+import SpecialOffer from "@/components/special-offer"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <HeroSection />
+        <SpecialOffer />
 
         {/* ProDentim Feature Section */}
         <section id="prodentim" className="w-full py-16 md:py-24 lg:py-32 border-t border-gray-100 bg-white">
@@ -305,7 +307,7 @@ export default function Home() {
                             className="object-contain"
                           />
                         </div>
-                        <span className="font-bold text-green-700 text-xl">PrimeBiome Glow</span>
+                        <span className="font-bold text-green-700 text-xl">PrimeBiome </span>
                         <span className="text-sm text-muted-foreground">Skin & Gut Health</span>
                       </div>
                     </th>
@@ -595,17 +597,17 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Contact Us</h3>
-              <p className="text-sm text-muted-foreground">Email: support@example.com</p>
-              <p className="text-sm text-muted-foreground">Phone: (555) 123-4567</p>
+              <p className="text-sm text-muted-foreground">Email: elite@beautyrealmart.com</p>
+             
               <div className="flex space-x-4">
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Facebook
+                ProDentim
                 </Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Twitter
+                FemiPro
                 </Link>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Instagram
+                PrimeBiome 
                 </Link>
               </div>
             </div>

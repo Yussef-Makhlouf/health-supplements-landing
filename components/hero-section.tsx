@@ -42,7 +42,7 @@ export default function HeroSection() {
               </Button>
 
               <Button size="lg" variant="outline" className="border-2 hover:bg-gray-50 transition-all duration-300">
-                Learn More
+                Learn More About This Offere <ChevronRight className="h-5 w-5" />
               </Button>
             </div>
 
