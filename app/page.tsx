@@ -115,7 +115,7 @@ export default function Home() {
 
             <div className="grid gap-8 mt-16">
               <ProductDetailsCard
-                name="PrimeBiome Glow"
+                name="PrimeBiome  "
                 tagline="Skin & Gut Health"
                 description="Support radiant skin and digestive health with our specialized formula containing B. Coagulans, Lion's Mane, and other natural botanicals that work synergistically to enhance your natural beauty from within."
                 benefits={[
@@ -302,7 +302,7 @@ export default function Home() {
                         <div className="relative h-20 w-20 mb-3">
                           <Image
                             src="/placeholder.svg?height=100&width=100"
-                            alt="PrimeBiome Glow bottle"
+                            alt="PrimeBiome   bottle"
                             fill
                             className="object-contain"
                           />
@@ -497,10 +497,10 @@ export default function Home() {
                 product="ProDentim"
               />
               <TestimonialCard
-                quote="PrimeBiome Glow has transformed my skin. After just one month, my complexion is clearer and more radiant than it's been in years. I've received so many compliments!"
+                quote="PrimeBiome   has transformed my skin. After just one month, my complexion is clearer and more radiant than it's been in years. I've received so many compliments!"
                 author="Michael K., Los Angeles"
                 rating={5}
-                product="PrimeBiome Glow"
+                product="PrimeBiome  "
               />
               <TestimonialCard
                 quote="FemiPro has been a game-changer for my bladder health. I feel more comfortable and confident throughout the day. I can finally enjoy activities without worry."
@@ -547,7 +547,7 @@ export default function Home() {
                     </Button>
                     <div className="grid grid-cols-2 gap-4 mt-4">
                       <Button variant="outline" size="lg" asChild>
-                        <Link href="#">PrimeBiome Glow</Link>
+                        <Link href="#">PrimeBiome  </Link>
                       </Button>
                       <Button variant="outline" size="lg" asChild>
                         <Link href="#">FemiPro</Link>
