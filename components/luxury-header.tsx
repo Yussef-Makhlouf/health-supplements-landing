@@ -95,7 +95,7 @@ export default function LuxuryHeader() {
           <NavLink href="#">Home</NavLink>
           <NavLink href="https://prodentim24.com/text.php#aff=lifestylemedicine623">ProDentim</NavLink>
           <NavLink href="http://primebiome24.com/text.php#aff=lifestylemedicine623">PrimeBiome</NavLink>
-          <NavLink href="http://femipro24.com/text.php#aff=lifestylemedicine623">FemiPro</NavLink>
+          <NavLink href="vx">FemiPro</NavLink>
         </nav>
 
         {/* Mobile Menu Button */}

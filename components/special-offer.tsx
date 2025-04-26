@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronRight, Check, Gift, Truck, Book, BookAIcon, Star } from "lucide-react"
+import { ChevronRight, Check, Gift, Truck, Book, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
@@ -46,8 +46,8 @@ and Get 2 FREE Bonuses!
                     <p className="text-sm font-medium">Free Shipping</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <BookAIcon className="h-5 w-5 text-blue-600" />
-                    <p className="text-sm font-medium">2E-Books </p>
+                    <Gift className="h-5 w-5 text-blue-600" />
+                    <p className="text-sm font-medium">2FREE Bonuses </p>
                   </div>
                   <Badge variant="outline" className="bg-white border-blue-200 text-blue-700">
                     <Check className="h-4 w-4 mr-1" />
@@ -104,8 +104,8 @@ and Get 2 FREE Bonuses!
                     <p className="text-sm font-medium">Free Shipping</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <BookAIcon className="h-5 w-5 text-green-600" />
-                    <p className="text-sm font-medium">2E-Books </p>
+                    <Gift className="h-5 w-5 text-green-600" />
+                    <p className="text-sm font-medium">2FREE Bonuses </p>
                   </div>
                   <Badge variant="outline" className="bg-white border-green-200 text-green-700">
                     <Check className="h-4 w-4 mr-1" />
@@ -162,8 +162,8 @@ and Get 2 FREE Bonuses!
                     <p className="text-sm font-medium">Free Shipping</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <BookAIcon className="h-5 w-5 text-purple-600" />
-                    <p className="text-sm font-medium">2E-Books </p>
+                    <Gift className="h-5 w-5 text-purple-600" />
+                    <p className="text-sm font-medium">2FREE Bonuses </p>
                   </div>
                   <Badge variant="outline" className="bg-white border-purple-200 text-purple-700">
                     <Check className="h-4 w-4 mr-1" />

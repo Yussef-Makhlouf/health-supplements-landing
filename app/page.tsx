@@ -150,7 +150,7 @@ export default function Home() {
                 ]}
                 ingredients={[
                   "Cranberry Extract (36:1 concentrate)",
-                  "D-Mannose (2000mg)",
+                  "D-Mannose",
                   "Hibiscus Extract",
                   "Dandelion Root",
                   "Marshmallow Root & Pumpkin Seed",
