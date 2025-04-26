@@ -65,10 +65,11 @@ export default function HeroSection() {
                   <ChevronRight className="h-5 w-5" />
                 </Link>
               </Button>
-
+              <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">
               <Button size="lg" variant="outline" className="border-2 hover:bg-gray-50 transition-all duration-300">
                 Learn More About This Offere <ChevronRight className="h-5 w-5" />
               </Button>
+              </Link>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">

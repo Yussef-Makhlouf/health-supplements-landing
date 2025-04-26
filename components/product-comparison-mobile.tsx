@@ -37,7 +37,7 @@ export default function ProductComparisonMobile() {
       resultsTimeline: "2-4 weeks for noticeable results",
       pricePoint: "Premium",
       image: "/prodentim.png",
-      buyLink: "https://prodentim.com/buy",
+      buyLink: "https://prodentim24.com/text.php#aff=lifestylemedicine623",
     },
     primebiome: {
       name: "PrimeBiome ",
@@ -56,7 +56,7 @@ export default function ProductComparisonMobile() {
       resultsTimeline: "4-6 weeks for optimal results",
       pricePoint: "Premium",
       image: "/primebiome.png",
-      buyLink: "https://primebiome.com/buy",
+      buyLink: "http://primebiome24.com/text.php#aff=lifestylemedicine623",
     },
     femipro: {
       name: "FemiPro",
@@ -75,7 +75,7 @@ export default function ProductComparisonMobile() {
       resultsTimeline: "1-2 weeks for initial comfort",
       pricePoint: "Premium",
       image: "/femipro.png",
-      buyLink: "https://femipro.com/buy",
+      buyLink: "http://femipro24.com/text.php#aff=lifestylemedicine623",
     },
   }
 

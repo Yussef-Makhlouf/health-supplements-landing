@@ -134,7 +134,7 @@ export default function Home() {
                 ]}
                 color="green"
                 imagePath="/primebiome.png"
-                learnMoreLink="#"
+                learnMoreLink="http://primebiome24.com/text.php#aff=lifestylemedicine623"
               />
 
               <ProductDetailsCard
@@ -157,7 +157,7 @@ export default function Home() {
                 ]}
                 color="purple"
                 imagePath="/femipro.png"
-                learnMoreLink="#"
+                learnMoreLink="http://femipro24.com/text.php#aff=lifestylemedicine623"
               />
             </div>
           </div>
@@ -304,7 +304,7 @@ export default function Home() {
                         <div className="relative h-20 w-20 mb-3">
                           <Image
                             src="/primebiome.png"
-                            alt="PrimeBiome   bottle"
+                            alt="PrimeBiome bottle"
                             fill
                             className="object-contain"
                           />
@@ -621,7 +621,7 @@ export default function Home() {
                 The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Note: Results may vary from Person to Person. The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or endorsements of our website.
+                Note: Results may vary from Person to Person. The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or endorsements of our website,If you click a merchant link and buy a product or service on their website, we may be paid a fee by the merchant.
               </p>
             </div>
           </div>
