@@ -560,7 +560,7 @@ export default function Home() {
                   </div>
                   <div className="space-y-4">
                     <div className="bg-blue-50 p-4 rounded-lg mb-6">
-                      <p className="font-medium text-center"> Order 6 Bottles and Get 2 FREE Bonuses!</p>
+                      <p className="font-medium text-center"> Order 6 Bottles and Get 2  E-Books!</p>
                       <p className="text-sm text-muted-foreground text-center">Plus Free Shipping</p>
                     </div>
                     <Button

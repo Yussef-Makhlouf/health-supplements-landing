@@ -21,7 +21,7 @@ export default function SpecialOffer() {
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                   <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
                     <Gift className="h-4 w-4 mr-1" />
-                    Order 6 Bottles and Get 2 FREE Bonuses!
+                    Order 6 Bottles and Get 2  E-Books!
                   </Badge>
                 </div>
                 <div className="inline-block">
@@ -46,7 +46,7 @@ export default function SpecialOffer() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Gift className="h-5 w-5 text-blue-600" />
-                    <p className="text-sm font-medium">2FREE Bonuses </p>
+                    <p className="text-sm font-medium">2FREE  E-Books! </p>
                   </div>
                   <Badge
                     variant="outline"
@@ -89,7 +89,7 @@ export default function SpecialOffer() {
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                   <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
                     <Gift className="h-4 w-4 mr-1" />
-                    Order 6 Bottles and Get 2 FREE Bonuses!
+                    Order 6 Bottles and Get 2  E-Books!
                   </Badge>
                 </div>
                 <div className="inline-block">
@@ -114,7 +114,7 @@ export default function SpecialOffer() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Gift className="h-5 w-5 text-green-600" />
-                    <p className="text-sm font-medium">2FREE Bonuses </p>
+                    <p className="text-sm font-medium">2FREE  E-Books! </p>
                   </div>
                   <Badge
                     variant="outline"
@@ -157,7 +157,7 @@ export default function SpecialOffer() {
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                   <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
                     <Gift className="h-4 w-4 mr-1" />
-                    Order 6 Bottles and Get 2 FREE Bonuses!
+                    Order 6 Bottles and Get 2  E-Books!
                   </Badge>
                 </div>
                 <div className="inline-block">
@@ -182,7 +182,7 @@ export default function SpecialOffer() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Gift className="h-5 w-5 text-purple-600" />
-                    <p className="text-sm font-medium">2FREE Bonuses </p>
+                    <p className="text-sm font-medium">2FREE  E-Books! </p>
                   </div>
                   <Badge
                     variant="outline"
