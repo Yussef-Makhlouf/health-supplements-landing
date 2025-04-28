@@ -9,14 +9,14 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://prodentim_medcines.beautyrealmart.com'),
+  metadataBase: new URL('https://prodentim.beautyrealmart.com'),
   title: "ProDentim | Premium Oral Health Supplements & Wellness Products",
   description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health. 100% natural, non-GMO, with a 60-day money-back guarantee.',
   keywords: "ProDentim,ProDentim, oral probiotic supplement, PrimeBiome Glow, FemiPro, healthy teeth and gums, radiant skin, bladder health supplement, natural probiotics, oral health, probiotic supplement, dental health, gum health, PrimeBiome, FemiPro, wellness supplements, premium health supplements, natural ingredients",
   openGraph: {
     title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums | HealthVita',
     description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health.',
-    url: 'https://prodentim_medcines.beautyrealmart.com',
+    url: 'https://prodentim.beautyrealmart.com',
     siteName: 'HealthVita Supplements',
     images: [
       {

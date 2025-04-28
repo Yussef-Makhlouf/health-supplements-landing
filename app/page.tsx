@@ -473,12 +473,12 @@ export default function Home() {
                     </td>
                     <td className="p-6 text-center">
                       <Button size="sm" className="bg-green-600 hover:bg-green-700 text-white" asChild>
-                        <Link href="https://kerassentials.co/text.php#aff=lifestylemedicine623">Shop Now</Link>
+                        <Link href="https://primebiome24.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
                       </Button>
                     </td>
                     <td className="p-6 text-center">
                       <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white" asChild>
-                        <Link href="https://synogutstore.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
+                        <Link href="https://femipro24.com/text.php#aff=lifestylemedicine623">Shop Now</Link>
                       </Button>
                     </td>
                   </tr>
@@ -630,7 +630,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                ProDentim
+                BeautyRealm
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed">
                 Premium health supplements for oral health, skin care, and bladder wellness. Crafted with the highest
@@ -675,7 +675,7 @@ export default function Home() {
           
           <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} ProDentim. All rights reserved.
+              &copy; {new Date().getFullYear()} BeautyRealm. All rights reserved.
             </p>
             <div className="flex items-center gap-6 mt-2 md:mt-0">
               <Link href="https://beautyrealmart.com/" target="_blank">

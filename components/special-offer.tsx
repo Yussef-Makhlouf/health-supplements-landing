@@ -143,7 +143,7 @@ export default function SpecialOffer() {
                   asChild
                 >
                   <Link
-                    href="#"
+                    href="https://primebiome24.com/text.php#aff=lifestylemedicine623"
                     className="flex items-center justify-center gap-2"
                   >
                     Buy PrimeBiome
@@ -211,7 +211,7 @@ export default function SpecialOffer() {
                   asChild
                 >
                   <Link
-                    href="#"
+                    href="https://femipro24.com/text.php#aff=lifestylemedicine623"
                     className="flex items-center justify-center gap-2"
                   >
                     Buy FemiPro
