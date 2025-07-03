@@ -95,6 +95,7 @@ export default function LuxuryHeader() {
           <NavLink href="#">Home</NavLink>
           <NavLink href="https://prodentim24.com/text.php#aff=lifestylemedicine623">ProDentim</NavLink>
           <NavLink href="http://primebiome24.com/text.php#aff=lifestylemedicine623">PrimeBiome</NavLink>
+          <NavLink href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">KeySlim</NavLink>
           <NavLink href="http://femipro24.com/text.php#aff=lifestylemedicine623">FemiPro</NavLink>
         </nav>
 
@@ -172,6 +173,7 @@ export default function LuxuryHeader() {
               <MobileNavLink href="#" onClick={() => setMobileMenuOpen(false)}>Home</MobileNavLink>
               <MobileNavLink href="https://prodentim24.com/text.php#aff=lifestylemedicine623" onClick={() => setMobileMenuOpen(false)}>ProDentim</MobileNavLink>
               <MobileNavLink href="http://primebiome24.com/text.php#aff=lifestylemedicine623" onClick={() => setMobileMenuOpen(false)}>PrimeBiome</MobileNavLink>
+              <MobileNavLink href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623" onClick={() => setMobileMenuOpen(false)}>KeySlim</MobileNavLink>
               <MobileNavLink href="http://femipro24.com/text.php#aff=lifestylemedicine623" onClick={() => setMobileMenuOpen(false)}>FemiPro</MobileNavLink>
             </motion.div>
             

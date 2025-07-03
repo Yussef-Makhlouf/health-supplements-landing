@@ -15,7 +15,7 @@ export default function SpecialOffer() {
 
         <Card className="border-2 border-amber-200 shadow-2xl hover:shadow-3xl transition-all duration-300">
           <CardContent className="p-8 md:p-12">
-            <div className="grid gap-8 lg:grid-cols-3 items-center">
+            <div className="grid gap-8 lg:grid-cols-4 items-center">
               {/* ProDentim */}
               <div className="space-y-6 bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl relative">
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
@@ -79,6 +79,74 @@ export default function SpecialOffer() {
                     className="flex items-center justify-center gap-2"
                   >
                     Buy ProDentim
+                    <ChevronRight className="h-5 w-5" />
+                  </Link>
+                </Button>
+              </div>
+
+              {/* KeySlim Drops */}
+              <div className="space-y-6 bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl relative">
+                <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
+                  <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
+                    <Gift className="h-4 w-4 mr-1" />
+                    Order 6 Bottles and Get 3 Digital Bonuses $261 FREE!
+                  </Badge>
+                </div>
+                <div className="inline-block">
+                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none px-3 py-1.5 text-sm">
+                    KeySlim Drops
+                  </Badge>
+                </div>
+
+                <div className="relative h-[250px] w-full">
+                  <Image
+                    src="/keySlim-drops1.png"
+                    alt="KeySlim Drops bottle"
+                    fill
+                    className="object-contain drop-shadow-2xl"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Truck className="h-5 w-5 text-orange-600" />
+                    <p className="text-sm font-medium">Free Shipping</p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Gift className="h-5 w-5 text-orange-600" />
+                    <p className="text-sm font-medium">3 Digital Bonuses $261 FREE</p>
+                  </div>
+                  <Badge
+                    variant="outline"
+                    className="bg-white border-orange-200 text-orange-700"
+                  >
+                    <Check className="h-4 w-4 mr-1" />
+                    Weight Loss Support
+                  </Badge>
+                </div>
+                <div className="flex items-center gap-2 pt-2">
+                  <div className="flex">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star
+                        key={star}
+                        className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm font-medium">
+                    5.0 (112,847+ reviews)
+                  </span>
+                </div>
+                <Button
+                  size="lg"
+                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
+                  asChild
+                >
+                  <Link
+                    href="https://getkeyslimdrops.cc/vsl1/#aff=lifestylemedicine623"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    Buy KeySlim Drops
                     <ChevronRight className="h-5 w-5" />
                   </Link>
                 </Button>

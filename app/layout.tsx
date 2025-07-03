@@ -29,6 +29,13 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums | HealthVita',
+    description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health.',
+    images: ['/og-image.png'],
+  },
+  
 }
 
 export default function RootLayout({

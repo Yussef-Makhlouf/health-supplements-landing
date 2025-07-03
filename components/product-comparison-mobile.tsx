@@ -58,6 +58,25 @@ export default function ProductComparisonMobile() {
       image: "/primebiome.png",
       buyLink: "http://primebiome24.com/text.php#aff=lifestylemedicine623",
     },
+    keyslim: {
+      name: "KeySlim Drops",
+      tagline: "Weight Loss & Metabolism",
+      color: "orange",
+      benefits: [
+        "Controls appetite naturally",
+        "Accelerates metabolism",
+        "Burns fat day & night", 
+        "Boosts energy levels",
+      ],
+      ingredients: ["L-Ornithine & Chromium", "Green Tea Extract", "Maca Root & Grapefruit", "Guarana & Forskolin", "African Mango Extract"],
+      usage: "1-2 drops daily, preferably before meals",
+      probioticCount: "24 Natural Ingredients",
+      suitableFor: "Adults looking for weight management",
+      resultsTimeline: "1-3 weeks for initial results",
+      pricePoint: "Premium",
+      image: "/keySlim-drops1.png",
+      buyLink: "https://getkeyslimdrops.cc/vsl1/#aff=lifestylemedicine623",
+    },
     femipro: {
       name: "FemiPro",
       tagline: "Bladder Health",
@@ -82,18 +101,21 @@ export default function ProductComparisonMobile() {
   const colorMap: Record<string, string> = {
     blue: "bg-blue-50 text-blue-700",
     green: "bg-green-50 text-green-700",
+    orange: "bg-orange-50 text-orange-700",
     purple: "bg-purple-100 text-purple-700",
   }
 
   const badgeColorMap: Record<string, string> = {
     blue: "bg-blue-100 text-blue-700",
     green: "bg-green-100 text-green-700",
+    orange: "bg-orange-100 text-orange-700",
     purple: "bg-purple-100 text-purple-700",
   }
 
   const buttonColorMap: Record<string, string> = {
     blue: "bg-blue-600 hover:bg-blue-700",
     green: "bg-green-600 hover:bg-green-700",
+    orange: "bg-orange-600 hover:bg-orange-700",
     purple: "bg-purple-600 hover:bg-purple-700",
   }
 
@@ -102,9 +124,10 @@ export default function ProductComparisonMobile() {
   return (
     <div className="md:hidden w-full">
       <Tabs defaultValue="prodentim" className="w-full" onValueChange={setActiveTab}>
-        <TabsList className="grid grid-cols-3 mb-6">
+        <TabsList className="grid grid-cols-4 mb-6">
           <TabsTrigger value="prodentim">ProDentim</TabsTrigger>
           <TabsTrigger value="primebiome">PrimeBiome</TabsTrigger>
+          <TabsTrigger value="keyslim">KeySlim</TabsTrigger>
           <TabsTrigger value="femipro">FemiPro</TabsTrigger>
         </TabsList>
 

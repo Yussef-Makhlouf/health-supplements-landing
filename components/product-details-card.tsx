@@ -11,7 +11,7 @@ interface ProductDetailsCardProps {
   description: string
   benefits: string[]
   ingredients: string[]
-  color: "purple" | "green" | "purple"
+  color: "purple" | "green" | "purple" | "orange"
   imagePath: string
   learnMoreLink: string
 }
@@ -38,6 +38,10 @@ export default function ProductDetailsCard({
     purple: {
       badge: "bg-purple-100 text-purple-700 hover:bg-purple-100 border-none",
       check: "bg-purple-50 text-purple-700",
+    },
+    orange: {
+      badge: "bg-orange-100 text-orange-700 hover:bg-orange-100 border-none",
+      check: "bg-orange-50 text-orange-700",
     },
   }
 
