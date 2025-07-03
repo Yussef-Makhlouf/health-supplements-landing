@@ -36,7 +36,7 @@ export default function KeySlimShowcase() {
             <div className="relative h-[500px] w-[400px] mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-200/50 to-amber-200/50 rounded-full blur-3xl scale-110 opacity-60"></div>
               <Image
-                src="/keySlim-drops1.png"
+                src="/keyslim-drops1.png"
                 alt="KeySlim Drops Weight Loss Formula"
                 fill
                 className="object-contain drop-shadow-2xl animate-float"

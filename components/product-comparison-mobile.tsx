@@ -74,7 +74,7 @@ export default function ProductComparisonMobile() {
       suitableFor: "Adults looking for weight management",
       resultsTimeline: "1-3 weeks for initial results",
       pricePoint: "Premium",
-      image: "/keySlim-drops1.png",
+      image: "/keyslim-drops1.png",
       buyLink: "https://getkeyslimdrops.cc/vsl1/#aff=lifestylemedicine623",
     },
     femipro: {

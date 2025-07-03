@@ -133,7 +133,7 @@ export default function Home() {
                   "African Mango & Forskolin",
                 ]}
                 color="orange"
-                imagePath="/keySlim-drops1.png"
+                imagePath="/keyslim-drops1.png"
                 learnMoreLink="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623"
               />
 
@@ -215,7 +215,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-200/50 to-amber-200/50 rounded-full blur-3xl scale-110 opacity-60"></div>
                 <div className="relative h-[300px] w-[240px] sm:h-[400px] sm:w-[320px] md:h-[500px] md:w-[400px] lg:h-[600px] lg:w-[480px] mx-auto">
                   <Image
-                    src="/keySlim-drops1.png"
+                      src="/keyslim-drops1.png"
                     alt="KeySlim Drops Revolutionary Weight Loss Formula"
                     fill
                     className="object-contain drop-shadow-2xl animate-float"
@@ -408,7 +408,7 @@ export default function Home() {
                 <CardContent className="p-6 text-center">
                   <div className="mb-6">
                     <Image
-                      src="/keySlim-drops1.png"
+                      src="/keyslim-drops1.png"
                       alt="KeySlim Drops Basic Package"
                       width={150}
                       height={150}
@@ -450,7 +450,7 @@ export default function Home() {
                 <CardContent className="p-6 text-center">
                   <div className="mb-6">
                     <Image
-                      src="/keySlim-drops2.png"
+                      src="/keyslim-drops2.png"
                       alt="KeySlim Drops Ultimate Package"
                       width={200}
                       height={150}
@@ -493,7 +493,7 @@ export default function Home() {
                 <CardContent className="p-6 text-center">
                   <div className="mb-6">
                     <Image
-                      src="/keySlim-drops3.png"
+                        src="/keyslim-drops3.png"
                       alt="KeySlim Drops Popular Package"
                       width={180}
                       height={150}
@@ -708,7 +708,7 @@ export default function Home() {
                       <div className="flex flex-col items-center">
                         <div className="relative h-20 w-20 mb-3">
                           <Image
-                            src="/keySlim-drops1.png"
+                              src="/keyslim-drops1.png"
                             alt="KeySlim Drops bottle"
                             fill
                             className="object-contain"

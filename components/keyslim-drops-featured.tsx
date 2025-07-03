@@ -24,7 +24,7 @@ export default function KeySlimDropsFeatured() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src="/keySlim-drops1.png"
+              src="/keyslim-drops1.png"
               alt="KeySlim Drops"
               width={400}
               height={500}

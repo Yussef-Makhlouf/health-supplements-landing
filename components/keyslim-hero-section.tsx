@@ -173,7 +173,7 @@ export default function KeySlimHeroSection() {
                 }}
               >
                 <Image
-                  src="/keySlim-drops1.png"
+                  src="/keyslim-drops1.png"
                   alt="KeySlim Drops Revolutionary Weight Loss Formula"
                   fill
                   className="object-contain drop-shadow-2xl"

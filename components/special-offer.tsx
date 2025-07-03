@@ -100,7 +100,7 @@ export default function SpecialOffer() {
 
                 <div className="relative h-[250px] w-full">
                   <Image
-                    src="/keySlim-drops1.png"
+                    src="/keyslim-drops1.png"
                     alt="KeySlim Drops bottle"
                     fill
                     className="object-contain drop-shadow-2xl"
