@@ -297,7 +297,23 @@ export default function Home() {
                 <div className="bg-white p-4 md:p-8 rounded-2xl shadow-2xl border-2 border-orange-200">
                   <div className="text-center space-y-4 md:space-y-6">
                     <h4 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">Special Launch Offer!</h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 text-xs md:text-sm">
+                      <div className="flex items-center justify-center gap-1 bg-[#ffeed9] p-2 rounded-md">
+                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
+                        <span>60-Day Guarantee</span>
+                      </div>
+                      <div className="flex items-center justify-center gap-1 bg-[#ffeed9] p-2 rounded-md">
+                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
+                        <span>FDA-Registered Facility</span>
+                      </div>
+                      <div className="flex items-center justify-center gap-1 bg-[#ffeed9] p-2 rounded-md">
+                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
+                        <span>Premium Quality Ingredients</span>
+                      </div>
+                    </div>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-4">
+                           
+               
                       <div className="flex">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <Star key={star} className="h-5 w-5 md:h-6 md:w-6 fill-yellow-400 text-yellow-400" />
@@ -315,21 +331,7 @@ export default function Home() {
                         Get KeySlim Drops Now - 60% OFF Limited Time!
                       </Link>
                     </Button>
-                    
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 text-xs md:text-sm">
-                      <div className="flex items-center justify-center gap-1">
-                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
-                        <span>60-Day Guarantee</span>
-                      </div>
-                      <div className="flex items-center justify-center gap-1">
-                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
-                        <span>Free Shipping</span>
-                      </div>
-                      <div className="flex items-center justify-center gap-1">
-                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
-                        <span>Bonus E-Books</span>
-                      </div>
-                    </div>
+               
                   </div>
                 </div>
               </div>
@@ -380,176 +382,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* KeySlim Drops Pricing Section */}
-        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-orange-50">
-          <div className="container px-4 md:px-6">
-            <div className="text-center mb-12 md:mb-16">
-              <Badge className="bg-gradient-to-r from-orange-100 to-amber-100 text-orange-800 border-none px-4 py-2 text-lg font-medium shadow-lg mb-8">
-                🚀 SPECIAL LIMITED TIME OFFER
-              </Badge>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6">
-                <span className="bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-500 bg-clip-text text-transparent">
-                  Choose Your KeySlim Package
-                </span>
-              </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                Select the perfect package for your weight loss journey. All packages include our premium KeySlim Drops formula with digital bonuses.
-              </p>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Basic Package */}
-              <Card className="relative bg-white shadow-xl border-2 border-gray-200 rounded-2xl overflow-hidden">
-                <div className="bg-gray-500 text-white text-center py-4">
-                  <h3 className="text-xl font-bold">BASIC</h3>
-                  <p className="text-sm opacity-90">30 Days Supply</p>
-                </div>
-                
-                <CardContent className="p-6 text-center">
-                  <div className="mb-6">
-                    <Image
-                      src="/keyslim-drops1.png"
-                      alt="KeySlim Drops Basic Package"
-                      width={150}
-                      height={150}
-                      className="mx-auto object-contain"
-                    />
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-4xl font-bold text-gray-900 mb-2">
-                      $79 
-                      <span className="text-lg font-normal text-muted-foreground">Per Bottle</span>
-                    </div>
-                  </div>
-
-                  <Button 
-                    className="w-full bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white font-bold py-4 rounded-xl text-lg mb-4"
-                    asChild
-                  >
-                    <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">
-                      Buy Now
-                    </Link>
-                  </Button>
-
-                  <div className="space-y-2 text-sm">
-                    <p className="font-semibold">Total price: <span className="line-through text-red-500">$99</span> $79</p>
-                    <p className="text-blue-600 font-medium">You save: $20</p>
-                    <p className="text-muted-foreground">Plus Shipping Fees</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Ultimate Discount Package */}
-              <Card className="relative bg-white shadow-2xl border-4 border-green-500 rounded-2xl overflow-hidden transform scale-105">
-                <div className="bg-gradient-to-r from-green-700 to-green-800 text-white text-center py-4">
-                  <h3 className="text-xl font-bold">ULTIMATE DISCOUNT</h3>
-                  <p className="text-sm opacity-90">180 Days Supply</p>
-                </div>
-                
-                <CardContent className="p-6 text-center">
-                  <div className="mb-6">
-                    <Image
-                      src="/keyslim-drops2.png"
-                      alt="KeySlim Drops Ultimate Package"
-                      width={200}
-                      height={150}
-                      className="mx-auto object-contain"
-                    />
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-4xl font-bold text-gray-900 mb-2">
-                      $49 
-                      <span className="text-lg font-normal text-muted-foreground">Per Bottle</span>
-                    </div>
-                    <p className="text-sm text-green-600 font-semibold">3 Digital Bonuses <span className="line-through text-red-500">$261</span> FREE</p>
-                  </div>
-
-                  <Button 
-                    className="w-full bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white font-bold py-4 rounded-xl text-lg mb-4"
-                    asChild
-                  >
-                    <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">
-                      Buy Now
-                    </Link>
-                  </Button>
-
-                  <div className="space-y-2 text-sm">
-                    <p className="font-semibold">Total price: <span className="line-through text-red-500">$594</span> $294</p>
-                    <p className="text-blue-600 font-medium">You save: $561</p>
-                    <p className="text-green-600 font-semibold">Free US Shipping</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Popular Package */}
-              <Card className="relative bg-white shadow-xl border-2 border-teal-500 rounded-2xl overflow-hidden">
-                <div className="bg-gradient-to-r from-teal-600 to-teal-700 text-white text-center py-4">
-                  <h3 className="text-xl font-bold">POPULAR PACKAGE</h3>
-                  <p className="text-sm opacity-90">90 Days Supply</p>
-                </div>
-                
-                <CardContent className="p-6 text-center">
-                  <div className="mb-6">
-                    <Image
-                        src="/keyslim-drops3.png"
-                      alt="KeySlim Drops Popular Package"
-                      width={180}
-                      height={150}
-                      className="mx-auto object-contain"
-                    />
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-4xl font-bold text-gray-900 mb-2">
-                      $59 
-                      <span className="text-lg font-normal text-muted-foreground">Per Bottle</span>
-                    </div>
-                    <p className="text-sm text-green-600 font-semibold">3 Digital Bonuses <span className="line-through text-red-500">$261</span> FREE</p>
-                  </div>
-
-                  <Button 
-                    className="w-full bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white font-bold py-4 rounded-xl text-lg mb-4"
-                    asChild
-                  >
-                    <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">
-                      Buy Now
-                    </Link>
-                  </Button>
-
-                  <div className="space-y-2 text-sm">
-                    <p className="font-semibold">Total price: <span className="line-through text-red-500">$297</span> $177</p>
-                    <p className="text-blue-600 font-medium">You save: $381</p>
-                    <p className="text-green-600 font-semibold">Free US Shipping</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Additional Information */}
-            <div className="mt-12 text-center">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div className="flex items-center justify-center gap-2">
-                  <Check className="h-5 w-5 text-green-600" />
-                  <span className="text-sm font-medium">60-Day Money Back Guarantee</span>
-                </div>
-                <div className="flex items-center justify-center gap-2">
-                  <Check className="h-5 w-5 text-green-600" />
-                  <span className="text-sm font-medium">Made in FDA Registered Facility</span>
-                </div>
-                <div className="flex items-center justify-center gap-2">
-                  <Check className="h-5 w-5 text-green-600" />
-                  <span className="text-sm font-medium">100% Natural Ingredients</span>
-                </div>
-              </div>
-              
-              <p className="text-sm text-muted-foreground mt-6 max-w-2xl mx-auto">
-                *Digital bonuses include exclusive diet guides, workout plans, and metabolism boosting recipes delivered instantly via email.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* Benefits Section */}
         <section className="w-full py-16 md:py-24 lg:py-32 border-t border-gray-100 bg-white">
@@ -714,7 +547,7 @@ export default function Home() {
                             className="object-contain"
                           />
                         </div>
-                        <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">
+                        <Link href="https://getkeyslimdrops.cc/vsl1/">
                         <span className="font-bold text-orange-700 text-xl">KeySlim Drops</span>
                         </Link>
                         <span className="text-sm text-muted-foreground">Weight Loss</span>
@@ -890,7 +723,7 @@ export default function Home() {
                     <td className="p-6 text-center border-b">1-2 weeks for initial comfort</td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-medium bg-gray-50">Price Point</td>
+                    <td className="p-6 font-medium bg-gray-50">quality</td>
                     <td className="p-6 text-center">
                       <Badge className="bg-blue-100 text-blue-700 px-3 py-1">Premium</Badge>
                     </td>
@@ -973,7 +806,7 @@ export default function Home() {
                 product="PrimeBiome"
               />
               <TestimonialCard
-                quote="KeySlim Drops changed my life! I lost 15 pounds in just 3 weeks without strict dieting. My energy levels are through the roof and I feel amazing every day!"
+                quote="KeySlim Drops changed my life! I lost 25 pounds in just 3 weeks without strict dieting. My energy levels are through the roof and I feel amazing every day!"
                 author="David R., Miami"
                 rating={5}
                 product="KeySlim Drops"
@@ -1026,7 +859,7 @@ export default function Home() {
                         <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623">PrimeBiome</Link>
                       </Button>
                       <Button variant="outline" size="lg" asChild>
-                        <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">KeySlim</Link>
+                        <Link href="https://getkeyslimdrops.cc/vsl1/">KeySlim</Link>
                       </Button>
                       <Button variant="outline" size="lg" asChild>
                         <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623">FemiPro</Link>
@@ -1092,7 +925,7 @@ export default function Home() {
               </p>
             </div>
             <div className="space-y-4">
-              <Link href='https://beautyrealmart.com/contact-us/'>
+              <Link href='https://store.beautyrealmart.com/contact-us/'>
                 <h3 className="text-xl font-bold">Contact Us</h3>
               </Link>
               <p className="text-base text-muted-foreground">Email: elite@beautyrealmart.com</p>
@@ -1103,7 +936,7 @@ export default function Home() {
                 <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   PrimeBiome
                 </Link>
-                <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://getkeyslimdrops.cc/vsl1/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   KeySlim Drops
                 </Link>
                 <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
@@ -1117,15 +950,15 @@ export default function Home() {
                 <Link href="https://beautyrealmart.com/privacy-policy/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="https://beautyrealmart.com/terms-of-use/" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/terms-of-service/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
-                <Link href="https://beautyrealmart.com/refund_returns/" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://beautyrealmart.com/return-policy/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Return Policy
                 </Link>
-                <Link href="https://beautyrealmart.com/disclaimer/" className="text-base text-muted-foreground hover:text-primary transition-colors">
+                {/* <Link href="https://store.beautyrealmart.com/disclaimer/" className="text-base text-muted-foreground hover:text-primary transition-colors">
                   Disclaimer
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -1135,9 +968,7 @@ export default function Home() {
               &copy; {new Date().getFullYear()} BeautyRealm. All rights reserved.
             </p>
             <div className="flex items-center gap-6 mt-2 md:mt-0">
-              <Link href="https://beautyrealmart.com/" target="_blank">
                 <img src="/logo.png" alt="Payment Method" className="w-24 h-24" />
-              </Link>
             </div>
           </div>
         </div>

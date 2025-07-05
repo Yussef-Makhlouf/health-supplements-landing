@@ -20,7 +20,7 @@ export const metadata = {
     siteName: 'HealthVita Supplements',
     images: [
       {
-        url: '/og-image.png',
+        url: '/prodentim.png',
         width: 1200,
         height: 630,
         alt: 'ProDentim oral probiotic supplement',
@@ -33,7 +33,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums | HealthVita',
     description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health.',
-    images: ['/og-image.png'],
+    images: ['/prodentim.png'],
   },
   
 }
@@ -49,6 +49,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="ProDentim" />
+        <link rel="icon" href="/prodentim.png" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

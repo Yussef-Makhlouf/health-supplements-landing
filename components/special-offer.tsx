@@ -89,7 +89,7 @@ export default function SpecialOffer() {
                 <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                   <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-3 py-1.5 text-sm animate-pulse">
                     <Gift className="h-4 w-4 mr-1" />
-                    Order 6 Bottles and Get 3 Digital Bonuses $261 FREE!
+                    Order 3 & 6 Bottles and Get 3 Digital Bonuses FREE!
                   </Badge>
                 </div>
                 <div className="inline-block">
@@ -114,7 +114,7 @@ export default function SpecialOffer() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Gift className="h-5 w-5 text-orange-600" />
-                    <p className="text-sm font-medium">3 Digital Bonuses $261 FREE</p>
+                    <p className="text-sm font-medium">3 Digital Bonuses FREE!</p>
                   </div>
                   <Badge
                     variant="outline"
@@ -143,7 +143,7 @@ export default function SpecialOffer() {
                   asChild
                 >
                   <Link
-                    href="https://getkeyslimdrops.cc/vsl1/#aff=lifestylemedicine623"
+                    href="https://getkeyslimdrops.cc/vsl1/"
                     className="flex items-center justify-center gap-2"
                   >
                     Buy KeySlim Drops

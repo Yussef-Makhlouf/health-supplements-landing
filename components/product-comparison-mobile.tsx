@@ -75,7 +75,7 @@ export default function ProductComparisonMobile() {
       resultsTimeline: "1-3 weeks for initial results",
       pricePoint: "Premium",
       image: "/keyslim-drops1.png",
-      buyLink: "https://getkeyslimdrops.cc/vsl1/#aff=lifestylemedicine623",
+      buyLink: "https://getkeyslimdrops.cc/vsl1/",
     },
     femipro: {
       name: "FemiPro",
@@ -190,7 +190,7 @@ export default function ProductComparisonMobile() {
                 </div>
 
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-medium mb-1">Price Point</h4>
+                  <h4 className="font-medium mb-1">quality</h4>
                   <Badge className={badgeColorMap[products[productKey].color]}>{products[productKey].pricePoint}</Badge>
                 </div>
               </div>

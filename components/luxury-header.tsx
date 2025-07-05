@@ -86,7 +86,9 @@ export default function LuxuryHeader() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            BEAUTY REALM
+            <span className="text-xl font-bold bg-gradient-to-r text-transparent from-primary via-purple-600 to-blue-600 bg-clip-text tracking-wider">
+              BEAUTY REALM
+            </span>
           </motion.span>
         </div>
 
@@ -95,7 +97,7 @@ export default function LuxuryHeader() {
           <NavLink href="#">Home</NavLink>
           <NavLink href="https://prodentim24.com/text.php#aff=lifestylemedicine623">ProDentim</NavLink>
           <NavLink href="http://primebiome24.com/text.php#aff=lifestylemedicine623">PrimeBiome</NavLink>
-          <NavLink href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">KeySlim</NavLink>
+          <NavLink href="https://getkeyslimdrops.cc/vsl1/">KeySlim</NavLink>
           <NavLink href="http://femipro24.com/text.php#aff=lifestylemedicine623">FemiPro</NavLink>
         </nav>
 
@@ -155,7 +157,7 @@ export default function LuxuryHeader() {
                 />
               </motion.div>
               <motion.span 
-                className="text-lg font-medium"
+                className="text-lg font-medium bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent tracking-wider"
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1, duration: 0.3 }}

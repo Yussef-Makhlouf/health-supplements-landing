@@ -51,7 +51,7 @@ export default function HeroSection() {
 
             <p className="text-xl text-muted-foreground md:text-2xl max-w-[600px]">
               Discover the #1 best-selling oral probiotic for healthy teeth and gums, plus more premium supplements for
-              radiant skin and bladder health.
+              radiant skin , weight loss and bladder health.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -108,7 +108,7 @@ export default function HeroSection() {
                   <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <span className="text-sm font-medium">5.0 (19,500+ reviews)</span>
+              <span className="text-sm font-medium">5.0 (95,000+ reviews)</span>
             </div>
           </div>
 
