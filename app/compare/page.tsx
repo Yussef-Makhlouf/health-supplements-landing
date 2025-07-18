@@ -281,13 +281,13 @@ export default function ComparePage() {
                   <TableCell className="text-center">4.8/5 ⭐</TableCell>
                   <TableCell className="text-center">4.8/5 ⭐</TableCell>
                 </TableRow>
-                <TableRow>
+                {/* <TableRow>
                   <TableCell className="font-semibold">Price</TableCell>
                   <TableCell className="text-center">$49.95</TableCell>
                   <TableCell className="text-center">$39.95</TableCell>
                   <TableCell className="text-center">$59.95</TableCell>
                   <TableCell className="text-center">$49.95</TableCell>
-                </TableRow>
+                </TableRow> */}
                 <TableRow>
                   <TableCell className="font-semibold">Money Back Guarantee</TableCell>
                   <TableCell className="text-center">60 Days</TableCell>
