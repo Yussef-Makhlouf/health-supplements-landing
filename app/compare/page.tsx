@@ -63,8 +63,8 @@ export default function ComparePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+              <CardHeader className="text-center flex-shrink-0">
                 <Image
                   src="/prodentim.png"
                   alt="ProDentim Oral Health"
@@ -76,11 +76,11 @@ export default function ComparePage() {
                 <p className="text-sm text-gray-600">Oral Health & Dental Care</p>
                 <Badge className="bg-blue-100 text-blue-700 mt-2">Best Seller</Badge>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center flex-grow flex flex-col">
                 <p className="text-gray-600 text-sm mb-4">
                   Advanced oral probiotic with 3.5 billion CFUs for healthy teeth and gums.
                 </p>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm flex-grow">
                   <div className="flex items-center justify-between">
                     <span>CFU Count:</span>
                     <span className="font-semibold">3.5 Billion</span>
@@ -100,8 +100,8 @@ export default function ComparePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+              <CardHeader className="text-center flex-shrink-0">
                 <Image
                   src="/keyslim-drops1.png"
                   alt="KeySlim Drops Weight Loss"
@@ -113,11 +113,11 @@ export default function ComparePage() {
                 <p className="text-sm text-gray-600">Weight Loss & Metabolism</p>
                 <Badge className="bg-orange-100 text-orange-700 mt-2">New Formula</Badge>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center flex-grow flex flex-col">
                 <p className="text-gray-600 text-sm mb-4">
                   Revolutionary liquid formula with 24 natural ingredients for sustainable weight loss.
                 </p>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm flex-grow">
                   <div className="flex items-center justify-between">
                     <span>Ingredients:</span>
                     <span className="font-semibold">24 Natural</span>
@@ -137,8 +137,8 @@ export default function ComparePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+              <CardHeader className="text-center flex-shrink-0">
                 <Image
                   src="/primebiome.png"
                   alt="PrimeBiome Gut Health"
@@ -150,11 +150,11 @@ export default function ComparePage() {
                 <p className="text-sm text-gray-600">Gut Health & Skin Radiance</p>
                 <Badge className="bg-green-100 text-green-700 mt-2">Gut-Skin Formula</Badge>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center flex-grow flex flex-col">
                 <p className="text-gray-600 text-sm mb-4">
                   Gut-skin connection supplement with 5 billion CFUs and collagen peptides.
                 </p>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm flex-grow">
                   <div className="flex items-center justify-between">
                     <span>CFU Count:</span>
                     <span className="font-semibold">5 Billion</span>
@@ -174,8 +174,8 @@ export default function ComparePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+              <CardHeader className="text-center flex-shrink-0">
                 <Image
                   src="/femipro.png"
                   alt="FemiPro Women's Health"
@@ -187,11 +187,11 @@ export default function ComparePage() {
                 <p className="text-sm text-gray-600">Women's Health & Bladder Support</p>
                 <Badge className="bg-purple-100 text-purple-700 mt-2">Women's Formula</Badge>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center flex-grow flex flex-col">
                 <p className="text-gray-600 text-sm mb-4">
                   Comprehensive women's health formula for bladder control and urinary wellness.
                 </p>
-                <div className="space-y-2 text-sm">
+                <div className="space-y-2 text-sm flex-grow">
                   <div className="flex items-center justify-between">
                     <span>Key Ingredient:</span>
                     <span className="font-semibold">Cranberry Extract</span>
