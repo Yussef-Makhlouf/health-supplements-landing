@@ -33,7 +33,7 @@ export default function Navbar() {
               className="object-contain"
               priority
             />
-            <span className="text-xl font-bold text-gray-900">BEAUTY REALM</span>
+            <span className="text-xl font-bold bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">BEAUTY REALM</span>
           </Link>
 
           {/* Desktop Navigation */}
