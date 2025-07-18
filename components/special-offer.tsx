@@ -182,7 +182,7 @@ export default function SpecialOffer() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Gift className="h-5 w-5 text-green-600" />
-                    <p className="text-sm font-medium">2FREE  E-Books! </p>
+                    <p className="text-sm font-medium">3FREE  E-Books! </p>
                   </div>
                   <Badge
                     variant="outline"

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Check, Star, Shield, Award, Leaf, Clock } from "lucide-react"
+import { Check, Star, Shield, Award, Leaf, Clock, Gift, Book } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -80,6 +80,97 @@ export default function ProDentimPage() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Special Offer Section */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-blue-100">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="text-center mb-12">
+            <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-4 py-2 text-sm animate-pulse mb-4">
+              <Gift className="h-4 w-4 mr-1" />
+              LIMITED TIME OFFER
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Special ProDentim Offer
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Order 6 bottles of ProDentim and receive 2 exclusive E-Books absolutely FREE!
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="border-2 border-blue-200 shadow-xl">
+              <CardContent className="p-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Gift className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">What You Get</h3>
+                  <div className="space-y-4 text-left">
+                    <div className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-500" />
+                      <span className="font-medium">6 Bottles of ProDentim</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-500" />
+                      <span className="font-medium">"Complete Oral Health Guide" E-Book</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-500" />
+                      <span className="font-medium">"Natural Dental Care Secrets" E-Book</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-500" />
+                      <span className="font-medium">Free Shipping</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Check className="h-5 w-5 text-green-500" />
+                      <span className="font-medium">60-Day Money Back Guarantee</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-blue-200 shadow-xl">
+              <CardContent className="p-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Book className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Free E-Books Include</h3>
+                  <div className="space-y-4 text-left">
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-blue-900 mb-2">Complete Oral Health Guide</h4>
+                      <p className="text-sm text-blue-700">
+                        Comprehensive guide covering natural oral care techniques, diet tips for healthy teeth, 
+                        and professional dental hygiene practices.
+                      </p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-blue-900 mb-2">Natural Dental Care Secrets</h4>
+                      <p className="text-sm text-blue-700">
+                        Ancient and modern natural remedies for oral health, including herbal treatments, 
+                        oil pulling techniques, and holistic dental care approaches.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-6">
+                    <Button 
+                      size="lg" 
+                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white"
+                      asChild
+                    >
+                      <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">
+                        Get ProDentim + 2 Free E-Books
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

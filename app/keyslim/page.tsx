@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Check, Star, Shield, Award, Leaf, Clock, ArrowRight, Users, TrendingUp, Heart, Zap, Target, Scale } from "lucide-react"
+import { Check, Star, Shield, Award, Leaf, Clock, ArrowRight, Users, TrendingUp, Heart, Zap, Target, Scale, Gift, Book } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -80,6 +80,108 @@ export default function KeySlimPage() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Special Offer Section */}
+        <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-100">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-4 py-2 text-sm animate-pulse mb-4">
+                <Gift className="h-4 w-4 mr-1" />
+                LIMITED TIME OFFER
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Special KeySlim Drops Offer
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Order 3 or 6 bottles of KeySlim Drops and receive 3 exclusive Digital Bonuses absolutely FREE!
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Card className="border-2 border-orange-200 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Gift className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">What You Get</h3>
+                    <div className="space-y-4 text-left">
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">3 or 6 Bottles of KeySlim Drops</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">"Complete Weight Loss Guide" Digital Bonus</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">"Healthy Meal Plans" Digital Bonus</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">"Fitness Workout Guide" Digital Bonus</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">Free Shipping</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">60-Day Money Back Guarantee</span>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-orange-200 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Book className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Free Digital Bonuses Include</h3>
+                    <div className="space-y-4 text-left">
+                      <div className="bg-orange-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-orange-900 mb-2">Complete Weight Loss Guide</h4>
+                        <p className="text-sm text-orange-700">
+                          Comprehensive guide covering nutrition science, metabolism optimization, 
+                          and sustainable weight loss strategies for long-term success.
+                        </p>
+                      </div>
+                      <div className="bg-orange-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-orange-900 mb-2">Healthy Meal Plans</h4>
+                        <p className="text-sm text-orange-700">
+                          Customized meal plans with delicious recipes designed to support your 
+                          weight loss journey and maintain optimal nutrition.
+                        </p>
+                      </div>
+                      <div className="bg-orange-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-orange-900 mb-2">Fitness Workout Guide</h4>
+                        <p className="text-sm text-orange-700">
+                          Effective exercise routines that complement your weight loss goals, 
+                          from beginner-friendly workouts to advanced training programs.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-6">
+                      <Button 
+                        size="lg" 
+                        className="w-full bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white"
+                        asChild
+                      >
+                        <Link href="https://getkeyslimdrops.cc/vsl1/">
+                          Get KeySlim Drops + 3 Free Digital Bonuses
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>

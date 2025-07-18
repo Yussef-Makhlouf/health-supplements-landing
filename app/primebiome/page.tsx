@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Check, Star, Shield, Award, Leaf, Clock, ArrowRight, Users, TrendingUp, Heart, Sparkles, Eye, Brain } from "lucide-react"
+import { Check, Star, Shield, Award, Leaf, Clock, ArrowRight, Users, TrendingUp, Heart, Sparkles, Eye, Brain, Gift, Book } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -80,6 +80,97 @@ export default function PrimeBiomePage() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Special Offer Section */}
+        <section className="py-16 bg-gradient-to-br from-green-50 to-emerald-100">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none px-4 py-2 text-sm animate-pulse mb-4">
+                <Gift className="h-4 w-4 mr-1" />
+                LIMITED TIME OFFER
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Special PrimeBiome Offer
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Order 6 bottles of PrimeBiome and receive 3 exclusive E-Books absolutely FREE!
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <Card className="border-2 border-green-200 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Gift className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">What You Get</h3>
+                    <div className="space-y-4 text-left">
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">6 Bottles of PrimeBiome</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">"Gut Health Mastery Guide" E-Book</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">"Natural Skin Care Secrets" E-Book</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">Free Shipping</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-green-500" />
+                        <span className="font-medium">60-Day Money Back Guarantee</span>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-green-200 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Book className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Free E-Books Include</h3>
+                    <div className="space-y-4 text-left">
+                      <div className="bg-green-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-green-900 mb-2">Gut Health Mastery Guide</h4>
+                        <p className="text-sm text-green-700">
+                          Comprehensive guide covering gut microbiome science, probiotic benefits, 
+                          and natural ways to improve digestive health and overall wellness.
+                        </p>
+                      </div>
+                      <div className="bg-green-50 p-4 rounded-lg">
+                        <h4 className="font-semibold text-green-900 mb-2">Natural Skin Care Secrets</h4>
+                        <p className="text-sm text-green-700">
+                          Ancient and modern natural remedies for radiant skin, including gut-skin 
+                          connection tips, herbal treatments, and holistic skincare approaches.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-6">
+                      <Button 
+                        size="lg" 
+                        className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
+                        asChild
+                      >
+                        <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623">
+                          Get PrimeBiome + 2 Free E-Books
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
