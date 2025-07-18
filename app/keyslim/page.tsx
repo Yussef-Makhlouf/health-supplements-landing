@@ -601,8 +601,8 @@ export default function KeySlimPage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+                <CardHeader className="text-center flex-shrink-0">
                   <Image
                     src="/prodentim.png"
                     alt="ProDentim Oral Health"
@@ -613,8 +613,8 @@ export default function KeySlimPage() {
                   <CardTitle className="text-lg">ProDentim</CardTitle>
                   <p className="text-sm text-gray-600">Oral Health & Fresh Breath</p>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm mb-4">
+                <CardContent className="text-center flex-grow flex flex-col">
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">
                     Revolutionary oral probiotic with 3.5 billion CFUs for healthy teeth and gums.
                   </p>
                   <Button size="sm" asChild>
@@ -623,8 +623,8 @@ export default function KeySlimPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+                <CardHeader className="text-center flex-shrink-0">
                   <Image
                     src="/primebiome.png"
                     alt="PrimeBiome Gut Health"
@@ -635,8 +635,8 @@ export default function KeySlimPage() {
                   <CardTitle className="text-lg">PrimeBiome</CardTitle>
                   <p className="text-sm text-gray-600">Gut Health & Skin Radiance</p>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm mb-4">
+                <CardContent className="text-center flex-grow flex flex-col">
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">
                     Gut-skin connection supplement with 5 billion CFUs and collagen peptides.
                   </p>
                   <Button size="sm" asChild>
@@ -645,8 +645,8 @@ export default function KeySlimPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+                <CardHeader className="text-center flex-shrink-0">
                   <Image
                     src="/femipro.png"
                     alt="FemiPro Women's Health"
@@ -657,8 +657,8 @@ export default function KeySlimPage() {
                   <CardTitle className="text-lg">FemiPro</CardTitle>
                   <p className="text-sm text-gray-600">Women's Health & Bladder Support</p>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm mb-4">
+                <CardContent className="text-center flex-grow flex flex-col">
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">
                     Comprehensive women's health formula for bladder control and urinary wellness.
                   </p>
                   <Button size="sm" asChild>

@@ -597,8 +597,8 @@ export default function FemiProPage() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+                <CardHeader className="text-center flex-shrink-0">
                   <Image
                     src="/prodentim.png"
                     alt="ProDentim Oral Health"
@@ -609,8 +609,8 @@ export default function FemiProPage() {
                   <CardTitle className="text-lg">ProDentim</CardTitle>
                   <p className="text-sm text-gray-600">Oral Health & Fresh Breath</p>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm mb-4">
+                <CardContent className="text-center flex-grow flex flex-col">
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">
                     Revolutionary oral probiotic with 3.5 billion CFUs for healthy teeth and gums.
                   </p>
                   <Button size="sm" asChild>
@@ -619,8 +619,8 @@ export default function FemiProPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+                <CardHeader className="text-center flex-shrink-0">
                   <Image
                     src="/keyslim-drops1.png"
                     alt="KeySlim Drops Weight Loss"
@@ -631,8 +631,8 @@ export default function FemiProPage() {
                   <CardTitle className="text-lg">KeySlim Drops</CardTitle>
                   <p className="text-sm text-gray-600">Weight Loss & Metabolism</p>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm mb-4">
+                <CardContent className="text-center flex-grow flex flex-col">
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">
                     Revolutionary liquid formula with 24 natural ingredients for sustainable weight loss.
                   </p>
                   <Button size="sm" asChild>
@@ -641,8 +641,8 @@ export default function FemiProPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+                <CardHeader className="text-center flex-shrink-0">
                   <Image
                     src="/primebiome.png"
                     alt="PrimeBiome Gut Health"
@@ -653,8 +653,8 @@ export default function FemiProPage() {
                   <CardTitle className="text-lg">PrimeBiome</CardTitle>
                   <p className="text-sm text-gray-600">Gut Health & Skin Radiance</p>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm mb-4">
+                <CardContent className="text-center flex-grow flex flex-col">
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">
                     Gut-skin connection supplement with 5 billion CFUs and collagen peptides.
                   </p>
                   <Button size="sm" asChild>

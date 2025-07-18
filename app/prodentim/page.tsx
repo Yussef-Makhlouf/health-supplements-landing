@@ -241,8 +241,153 @@ export default function ProDentimPage() {
         </div>
       </section>
 
+      {/* Before and After Results */}
+      <section className="py-20 bg-white">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Real Results: Before and After ProDentim
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See the incredible transformations our customers have experienced with ProDentim. 
+              These real results speak for themselves.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader className="text-center">
+                <div className="flex justify-between items-center mb-4">
+                  <div className="text-center flex-1">
+                    <h4 className="text-sm font-semibold text-red-600 mb-2">BEFORE</h4>
+                    <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                    </div>
+                    <p className="text-xs text-gray-600">Gum Inflammation</p>
+                  </div>
+                  <div className="text-center flex-1">
+                    <h4 className="text-sm font-semibold text-green-600 mb-2">AFTER</h4>
+                    <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                    </div>
+                    <p className="text-xs text-gray-600">Healthy Gums</p>
+                  </div>
+                </div>
+                <CardTitle className="text-lg">Sarah M. - Austin, TX</CardTitle>
+                <p className="text-sm text-gray-600">"After 3 weeks of ProDentim"</p>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600 text-sm mb-4">
+                  "My gums were constantly inflamed and sensitive. After just 3 weeks with ProDentim, 
+                  the inflammation is completely gone and I can enjoy hot and cold foods again!"
+                </p>
+                <div className="flex justify-center">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader className="text-center">
+                <div className="flex justify-between items-center mb-4">
+                  <div className="text-center flex-1">
+                    <h4 className="text-sm font-semibold text-red-600 mb-2">BEFORE</h4>
+                    <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                    </div>
+                    <p className="text-xs text-gray-600">Bad Breath</p>
+                  </div>
+                  <div className="text-center flex-1">
+                    <h4 className="text-sm font-semibold text-green-600 mb-2">AFTER</h4>
+                    <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                    </div>
+                    <p className="text-xs text-gray-600">Fresh Breath</p>
+                  </div>
+                </div>
+                <CardTitle className="text-lg">Michael J. - Seattle, WA</CardTitle>
+                <p className="text-sm text-gray-600">"After 2 weeks of ProDentim"</p>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600 text-sm mb-4">
+                  "I struggled with chronic bad breath for years. ProDentim completely transformed 
+                  my oral health. My breath is now fresh throughout the entire day!"
+                </p>
+                <div className="flex justify-center">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader className="text-center">
+                <div className="flex justify-between items-center mb-4">
+                  <div className="text-center flex-1">
+                    <h4 className="text-sm font-semibold text-red-600 mb-2">BEFORE</h4>
+                    <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                    </div>
+                    <p className="text-xs text-gray-600">Weak Teeth</p>
+                  </div>
+                  <div className="text-center flex-1">
+                    <h4 className="text-sm font-semibold text-green-600 mb-2">AFTER</h4>
+                    <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                    </div>
+                    <p className="text-xs text-gray-600">Strong Teeth</p>
+                  </div>
+                </div>
+                <CardTitle className="text-lg">Theo F. - Chicago, IL</CardTitle>
+                <p className="text-sm text-gray-600">"After 4 weeks of ProDentim"</p>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600 text-sm mb-4">
+                  "My teeth were sensitive and weak. After 4 weeks with ProDentim, they feel 
+                  stronger and more resilient. My dentist was amazed at the improvement!"
+                </p>
+                <div className="flex justify-center">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-blue-50 rounded-lg p-8 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Join Thousands of Success Stories
+              </h3>
+              <p className="text-lg text-gray-600 mb-6">
+                These are just a few examples of the incredible transformations our customers experience. 
+                ProDentim has helped over 50,000+ Americans achieve better oral health.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">2-3</div>
+                  <div className="text-sm text-gray-600">Weeks to See Results</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">4.8/5</div>
+                  <div className="text-sm text-gray-600">Average Customer Rating</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">50K+</div>
+                  <div className="text-sm text-gray-600">Happy Customers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Customer Reviews */}
-      <section id="reviews" className="py-20 bg-white">
+      <section id="reviews" className="py-20 bg-gray-50">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -398,6 +543,88 @@ export default function ProDentimPage() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Products */}
+      <section className="py-20 bg-gray-50">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Complete Your Health Journey
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover our other premium supplements designed to support your overall wellness.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+              <CardHeader className="text-center flex-shrink-0">
+                <Image
+                  src="/keyslim-drops1.png"
+                  alt="KeySlim Drops Weight Loss"
+                  width={200}
+                  height={200}
+                  className="w-full h-auto max-w-[120px] mx-auto mb-4"
+                />
+                <CardTitle className="text-lg">KeySlim Drops</CardTitle>
+                <p className="text-sm text-gray-600">Weight Loss & Metabolism</p>
+              </CardHeader>
+              <CardContent className="text-center flex-grow flex flex-col">
+                <p className="text-gray-600 text-sm mb-4 flex-grow">
+                  Revolutionary liquid formula with 24 natural ingredients for sustainable weight loss.
+                </p>
+                <Button size="sm" asChild>
+                  <Link href="/keyslim">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+              <CardHeader className="text-center flex-shrink-0">
+                <Image
+                  src="/primebiome.png"
+                  alt="PrimeBiome Gut Health"
+                  width={200}
+                  height={200}
+                  className="w-full h-auto max-w-[120px] mx-auto mb-4"
+                />
+                <CardTitle className="text-lg">PrimeBiome</CardTitle>
+                <p className="text-sm text-gray-600">Gut Health & Skin Radiance</p>
+              </CardHeader>
+              <CardContent className="text-center flex-grow flex flex-col">
+                <p className="text-gray-600 text-sm mb-4 flex-grow">
+                  Gut-skin connection supplement with 5 billion CFUs and collagen peptides.
+                </p>
+                <Button size="sm" asChild>
+                  <Link href="/primebiome">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+              <CardHeader className="text-center flex-shrink-0">
+                <Image
+                  src="/femipro.png"
+                  alt="FemiPro Women's Health"
+                  width={200}
+                  height={200}
+                  className="w-full h-auto max-w-[120px] mx-auto mb-4"
+                />
+                <CardTitle className="text-lg">FemiPro</CardTitle>
+                <p className="text-sm text-gray-600">Women's Health & Bladder Support</p>
+              </CardHeader>
+              <CardContent className="text-center flex-grow flex flex-col">
+                <p className="text-gray-600 text-sm mb-4 flex-grow">
+                  Comprehensive women's health formula for bladder control and urinary wellness.
+                </p>
+                <Button size="sm" asChild>
+                  <Link href="/femipro">Learn More</Link>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
