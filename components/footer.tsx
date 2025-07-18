@@ -23,18 +23,14 @@ export default function Footer() {
               Natural ingredients, science-backed formulas, and proven results.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.facebook.com/share/1KmjXgAnUk/" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+       
+              <Link href="https://www.instagram.com/beautyrealm70?igsh=MTB1OXVqMmFnc3ZvZg==" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Youtube className="h-5 w-5" />
-              </Link>
+       
             </div>
           </div>
 
