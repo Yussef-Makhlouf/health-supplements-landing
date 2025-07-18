@@ -1,9 +1,10 @@
-import LuxuryHeader from "@/components/luxury-header"
+import Footer from "@/components/footer"
+import Navbar from "@/components/navbar"
 
 export default function TermsOfService() {
   return (
     <div className="flex min-h-screen flex-col">
-      <LuxuryHeader />
+      <Navbar />
       
       <main className="flex-1 bg-white">
         <div className="container px-4 md:px-6 py-16 md:py-24 max-w-4xl mx-auto">
@@ -119,6 +120,7 @@ export default function TermsOfService() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   )
 } 

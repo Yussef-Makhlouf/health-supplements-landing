@@ -14,10 +14,10 @@ export const metadata = {
   description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health. 100% natural, non-GMO, with a 60-day money-back guarantee.',
   keywords: "ProDentim,ProDentim, oral probiotic supplement, PrimeBiome Glow, FemiPro, healthy teeth and gums, radiant skin, bladder health supplement, natural probiotics, oral health, probiotic supplement, dental health, gum health, PrimeBiome, FemiPro, wellness supplements, premium health supplements, natural ingredients",
   openGraph: {
-    title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums | HealthVita',
+    title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums |  BEAUTY REALM',
     description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health.',
     url: 'https://prodentim.beautyrealmart.com',
-    siteName: 'HealthVita Supplements',
+    siteName: ' BEAUTY REALM Supplements',
     images: [
       {
         url: '/prodentim.png',
@@ -31,7 +31,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums | HealthVita',
+    title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums |  BEAUTY REALM',
     description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health.',
     images: ['/prodentim.png'],
   },
@@ -61,7 +61,7 @@ export default function RootLayout({
               "description": "ProDentim is an advanced oral probiotic supplement designed to support healthy teeth and gums. With 3.5 billion CFUs of clinically studied probiotics like Lactobacillus paracasei and Lactobacillus reuteri, it balances your oral microbiome, reduces plaque, and freshens breath.",
               "brand": {
                 "@type": "Brand",
-                "name": "HealthVita Supplements"
+                "name": " BEAUTY REALM Supplements"
               },
               "offers": {
                 "@type": "Offer",

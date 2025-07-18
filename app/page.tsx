@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Check, Star } from "lucide-react"
+import { Check, Star, Award, Shield, Truck, RefreshCw, Heart, ArrowRight, Clock, Users, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -8,34 +8,71 @@ import TestimonialCard from "@/components/testimonial-card"
 import ProductFeature from "@/components/product-feature"
 import CountdownTimer from "@/components/countdown-timer"
 import ProductComparisonMobile from "@/components/product-comparison-mobile"
-import LuxuryHeader from "@/components/luxury-header"
 import HeroSection from "@/components/hero-section"
 import ProductDetailsCard from "@/components/product-details-card"
 import SpecialOffer from "@/components/special-offer"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <LuxuryHeader />
+      <Navbar />
 
       <main className="flex-1">
         {/* Hero Section */}
         <HeroSection />
-   
+
+        {/* Trust Indicators */}
+        <section className="py-8 bg-gray-50 border-b border-gray-100">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="flex items-center justify-center space-x-2 text-center">
+                <Users className="h-5 w-5 text-blue-600" />
+                <div>
+                  <div className="font-semibold text-sm">50,000+</div>
+                  <div className="text-xs text-gray-600">Happy Customers</div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center space-x-2 text-center">
+                <Star className="h-5 w-5 text-yellow-500" />
+                <div>
+                  <div className="font-semibold text-sm">4.8/5</div>
+                  <div className="text-xs text-gray-600">Average Rating</div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center space-x-2 text-center">
+                <Shield className="h-5 w-5 text-green-600" />
+                <div>
+                  <div className="font-semibold text-sm">60-Day</div>
+                  <div className="text-xs text-gray-600">Money Back</div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center space-x-2 text-center">
+                <Truck className="h-5 w-5 text-purple-600" />
+                <div>
+                  <div className="font-semibold text-sm">Free</div>
+                  <div className="text-xs text-gray-600">Shipping</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* ProDentim Feature Section */}
         <section id="prodentim" className="w-full py-16 md:py-24 lg:py-32 border-t border-gray-100 bg-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none px-3 py-1.5">
-                TRUSTED BY THOUSANDS
+                #1 ORAL HEALTH SUPPLEMENT IN AMERICA
               </Badge>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-gray-900 via-primary to-blue-600 bg-clip-text text-transparent">
-                Why ProDentim is the Ultimate Oral Health Solution
+                Transform Your Oral Health with ProDentim
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-xl">
-                ProDentim is a revolutionary oral probiotic supplement specially designed to support dental health with
-                powerful, scientifically-backed ingredients that promote a healthy oral microbiome.
+                Discover the revolutionary oral probiotic that's changing dental health across America. 
+                With 3.5 billion CFUs of clinically-studied probiotics, ProDentim supports healthy teeth, 
+                gums, and fresh breath naturally.
               </p>
             </div>
 
@@ -72,6 +109,30 @@ export default function Home() {
               />
             </div>
 
+            {/* Visual Placeholder: Customer Before/After Photos */}
+            <div className="mt-16 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Real Customer Results</h3>
+                <p className="text-gray-600">See the transformation in oral health that thousands of Americans have experienced</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white rounded-lg p-6 text-center">
+                  <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-gray-500 text-sm">Before Photo</span>
+                  </div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Before ProDentim</h4>
+                  <p className="text-sm text-gray-600">Gum sensitivity, bad breath, weak enamel</p>
+                </div>
+                <div className="bg-white rounded-lg p-6 text-center">
+                  <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-gray-500 text-sm">After Photo</span>
+                  </div>
+                  <h4 className="font-semibold text-gray-900 mb-2">After ProDentim</h4>
+                  <p className="text-sm text-gray-600">Healthy gums, fresh breath, strong teeth</p>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-20 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto shadow-xl">
               <div className="flex flex-col items-center text-center space-y-6">
                 <div className="flex">
@@ -85,13 +146,20 @@ export default function Home() {
                   improvement!"
                 </blockquote>
                 <p className="font-semibold text-lg">— Theo F., Chicago</p>
-                <Button
-                  size="lg"
-                  className="mt-4 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                  asChild
-                >
-                  <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Get ProDentim Today</Link>
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">
+                      Get ProDentim Today - Save 50%
+                    </Link>
+                  </Button>
+                  <Button variant="outline" size="lg" asChild>
+                    <Link href="/prodentim">Learn More About ProDentim</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -102,35 +170,35 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none px-3 py-1.5">
-                PREMIUM SUPPLEMENTS
+                PREMIUM HEALTH SUPPLEMENTS
               </Badge>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-green-700 via-green-600 to-blue-600 bg-clip-text text-transparent">
-                Explore Our Premium Supplements
+                Complete Your Wellness Journey
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-xl">
                 Discover our carefully formulated supplements designed to support your overall wellness journey with
-                premium, science-backed ingredients.
+                premium, science-backed ingredients that deliver real results.
               </p>
             </div>
 
             <div className="grid gap-8 mt-16">
               <ProductDetailsCard
                 name="KeySlim Drops"
-                tagline="Weight Loss & Metabolism"
-                description="Revolutionary liquid weight loss supplement with 24 natural ingredients designed to optimize metabolism and support sustainable fat burning. Three-stage formula targets appetite control, metabolic acceleration, and long-term weight management."
+                tagline="Revolutionary Weight Loss & Metabolism"
+                description="Experience the breakthrough liquid weight loss supplement with 24 powerful natural ingredients. Our revolutionary 3-stage formula targets appetite control, metabolic acceleration, and sustainable weight management for real results in 1-3 weeks."
                 benefits={[
-                  "Controls appetite and hunger naturally",
-                  "Accelerates metabolism and fat burning",
-                  "Supports long-term weight management",
-                  "Boosts energy levels naturally",
-                  "Non-GMO, vegan, and gluten-free",
+                  "Controls appetite and hunger naturally with advanced ingredients",
+                  "Accelerates metabolism and fat burning through thermogenesis",
+                  "Supports long-term weight management and maintenance",
+                  "Boosts energy levels naturally without jitters",
+                  "Non-GMO, vegan, and gluten-free for everyone",
                 ]}
                 ingredients={[
-                  "L-Ornithine & Chromium Picolinate",
-                  "Green Tea Leaf Extract",
-                  "Maca Root & Grapefruit Extract",
-                  "Guarana & Raspberry Ketones",
-                  "African Mango & Forskolin",
+                  "L-Ornithine & Chromium Picolinate for appetite control",
+                  "Green Tea Leaf Extract for metabolism boost",
+                  "Maca Root & Grapefruit Extract for energy",
+                  "Guarana & Raspberry Ketones for fat burning",
+                  "African Mango & Forskolin for sustainable results",
                 ]}
                 color="orange"
                 imagePath="/keyslim-drops1.png"
@@ -138,22 +206,22 @@ export default function Home() {
               />
 
               <ProductDetailsCard
-                name="PrimeBiome  "
-                tagline="Skin & Gut Health"
-                description="Support radiant skin and digestive health with our specialized formula containing B. Coagulans, Lion's Mane, and other natural botanicals that work synergistically to enhance your natural beauty from within."
+                name="PrimeBiome"
+                tagline="Gut Health & Radiant Skin Connection"
+                description="Unlock the powerful gut-skin connection with our specialized formula containing B. Coagulans, Lion's Mane, and premium collagen peptides. Experience radiant skin and optimal digestive health from within."
                 benefits={[
-                  "Promotes radiant, youthful skin",
-                  "Supports gut microbiome balance",
-                  "Reduces inflammation and redness",
-                  "Enhances nutrient absorption",
-                  "Improves skin elasticity and hydration",
+                  "Promotes radiant, youthful skin through gut-skin axis",
+                  "Supports gut microbiome balance with 5 billion CFUs",
+                  "Reduces inflammation and redness naturally",
+                  "Enhances nutrient absorption for better health",
+                  "Improves skin elasticity and hydration from within",
                 ]}
                 ingredients={[
-                  "B. Coagulans (5 Billion CFU)",
-                  "Lion's Mane Mushroom Extract",
-                  "Marine Collagen Peptides",
-                  "Hyaluronic Acid",
-                  "Vitamins C, E & Zinc",
+                  "B. Coagulans (5 Billion CFU) for gut health",
+                  "Lion's Mane Mushroom Extract for cognitive support",
+                  "Marine Collagen Peptides for skin structure",
+                  "Hyaluronic Acid for deep hydration",
+                  "Vitamins C, E & Zinc for antioxidant protection",
                 ]}
                 color="green"
                 imagePath="/primebiome.png"
@@ -162,21 +230,21 @@ export default function Home() {
 
               <ProductDetailsCard
                 name="FemiPro"
-                tagline="Bladder Health"
-                description="Improve bladder control and urinary tract health with our proprietary blend of herbal extracts designed specifically for women's wellness, providing comfort and confidence throughout your day."
+                tagline="Complete Women's Health & Bladder Support"
+                description="Specially formulated for women's unique health needs, FemiPro combines powerful herbal extracts to support bladder control, urinary tract health, and overall pelvic wellness for confidence and comfort."
                 benefits={[
-                  "Improves bladder control and function",
-                  "Supports urinary tract health",
-                  "Reduces discomfort and urgency",
-                  "Promotes overall pelvic floor health",
-                  "Provides long-lasting comfort",
+                  "Improves bladder control and function naturally",
+                  "Supports urinary tract health with cranberry extract",
+                  "Reduces discomfort and urgency with soothing herbs",
+                  "Promotes overall pelvic floor health and strength",
+                  "Provides long-lasting comfort and confidence",
                 ]}
                 ingredients={[
-                  "Cranberry Extract (36:1 concentrate)",
-                  "D-Mannose",
-                  "Hibiscus Extract",
-                  "Dandelion Root",
-                  "Marshmallow Root & Pumpkin Seed",
+                  "Cranberry Extract (36:1 concentrate) for urinary health",
+                  "D-Mannose for natural urinary tract support",
+                  "Hibiscus Extract for soothing relief",
+                  "Dandelion Root for natural diuretic properties",
+                  "Marshmallow Root & Pumpkin Seed for comfort",
                 ]}
                 color="purple"
                 imagePath="/femipro.png"
@@ -185,6 +253,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <SpecialOffer />
         
         {/* KeySlim Drops Featured Section */}
@@ -248,233 +317,230 @@ export default function Home() {
                 <div>
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-8 text-center lg:text-left">Revolutionary 3-Stage System</h3>
                   
-                  <div className="space-y-4 md:space-y-6">
-                    <Card className="bg-gradient-to-r from-orange-50 to-orange-100 border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300">
-                      <CardContent className="p-4 md:p-6">
-                        <div className="flex items-start gap-3 md:gap-4">
-                          <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-orange-500 flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-sm md:text-base">1</span>
-                          </div>
-                          <div>
-                            <h4 className="text-lg md:text-xl font-bold mb-2">Turn Off Hunger Switch</h4>
-                            <p className="text-sm md:text-base text-muted-foreground">L-Ornithine, Chromium, and GABA work synergistically to naturally suppress appetite and control cravings</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-
-                    <Card className="bg-gradient-to-r from-amber-50 to-amber-100 border-amber-200 shadow-lg hover:shadow-xl transition-all duration-300">
-                      <CardContent className="p-4 md:p-6">
-                        <div className="flex items-start gap-3 md:gap-4">
-                          <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-sm md:text-base">2</span>
-                          </div>
-                          <div>
-                            <h4 className="text-lg md:text-xl font-bold mb-2">Super Accelerate Metabolism</h4>
-                            <p className="text-sm md:text-base text-muted-foreground">Green Tea Extract, Guarana, and Forskolin boost thermogenesis and fat burning without affecting muscle mass</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-
-                    <Card className="bg-gradient-to-r from-yellow-50 to-yellow-100 border-yellow-200 shadow-lg hover:shadow-xl transition-all duration-300">
-                      <CardContent className="p-4 md:p-6">
-                        <div className="flex items-start gap-3 md:gap-4">
-                          <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-sm md:text-base">3</span>
-                          </div>
-                          <div>
-                            <h4 className="text-lg md:text-xl font-bold mb-2">Long-Term Fat Burning</h4>
-                            <p className="text-sm md:text-base text-muted-foreground">Maca Root, Grapefruit Extract, and L-Arginine support sustainable weight loss and energy conversion</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-
-                {/* CTA Section */}
-                <div className="bg-white p-4 md:p-8 rounded-2xl shadow-2xl border-2 border-orange-200">
-                  <div className="text-center space-y-4 md:space-y-6">
-                    <h4 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">Special Launch Offer!</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-4 text-xs md:text-sm">
-                      <div className="flex items-center justify-center gap-1 bg-[#ffeed9] p-2 rounded-md">
-                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
-                        <span>60-Day Guarantee</span>
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-white font-bold text-sm">1</span>
                       </div>
-                      <div className="flex items-center justify-center gap-1 bg-[#ffeed9] p-2 rounded-md">
-                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
-                        <span>FDA-Registered Facility</span>
+                      <div>
+                        <h4 className="font-semibold text-lg text-gray-900 mb-2">Appetite Control</h4>
+                        <p className="text-gray-600 leading-relaxed">
+                          Advanced ingredients like African Mango and Chromium Picolinate work together to naturally 
+                          suppress appetite and reduce cravings, helping you consume fewer calories without feeling deprived.
+                        </p>
                       </div>
-                      <div className="flex items-center justify-center gap-1 bg-[#ffeed9] p-2 rounded-md">
-                        <Check className="h-3 w-3 md:h-4 md:w-4 text-green-600 flex-shrink-0" />
-                        <span>Premium Quality Ingredients</span>
-                      </div>
-                    </div>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-4">
-                           
-               
-                      <div className="flex">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <Star key={star} className="h-5 w-5 md:h-6 md:w-6 fill-yellow-400 text-yellow-400" />
-                        ))}
-                      </div>
-                      <span className="text-sm md:text-lg font-medium">4.9/5 (112,847+ reviews)</span>
                     </div>
                     
-                    <Button
-                      size="lg"
-                      className="w-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-xl hover:shadow-2xl transition-all duration-300 text-sm md:text-lg lg:text-xl py-4 md:py-6"
-                      asChild
-                    >
-                      <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">
-                        Get KeySlim Drops Now - 60% OFF Limited Time!
-                      </Link>
-                    </Button>
-               
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-white font-bold text-sm">2</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-lg text-gray-900 mb-2">Metabolism Boost</h4>
+                        <p className="text-gray-600 leading-relaxed">
+                          Green Tea Extract, Guarana, and Raspberry Ketones accelerate your metabolism and increase 
+                          fat burning, turning your body into a more efficient calorie-burning machine.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-white font-bold text-sm">3</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-lg text-gray-900 mb-2">Long-term Success</h4>
+                        <p className="text-gray-600 leading-relaxed">
+                          Forskolin and Maca Root support sustainable weight management by improving body composition 
+                          and helping maintain your results long after you reach your goal weight.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
+                {/* Visual Placeholder: How It Works Infographic */}
+                <div className="bg-white rounded-xl p-6 shadow-lg">
+                  <h4 className="font-semibold text-lg text-gray-900 mb-4 text-center">How KeySlim Drops Works</h4>
+                  <div className="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <span className="text-gray-500">Infographic: 3-Stage Weight Loss Process</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white shadow-lg"
+                    asChild
+                  >
+                    <Link href="https://getkeyslimdrops.cc/home/#aff=lifestylemedicine623">
+                      Get KeySlim Drops Now - Save 60%
+                    </Link>
+                  </Button>
+                  <Button variant="outline" size="lg" asChild>
+                    <Link href="/keyslim">Learn More About KeySlim</Link>
+                  </Button>
+                </div>
               </div>
-            </div>
-
-            {/* Bottom Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-              <Card className="bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200 text-center">
-                <CardContent className="p-4 md:p-6">
-                  <div className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-orange-500 flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <span className="text-white text-lg md:text-2xl">💧</span>
-                  </div>
-                  <h5 className="font-bold text-base md:text-lg mb-2">Liquid Formula</h5>
-                  <p className="text-xs md:text-sm text-muted-foreground">3x faster absorption than pills</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 text-center">
-                <CardContent className="p-4 md:p-6">
-                  <div className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-amber-500 flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <span className="text-white text-lg md:text-2xl">🌱</span>
-                  </div>
-                  <h5 className="font-bold text-base md:text-lg mb-2">100% Natural</h5>
-                  <p className="text-xs md:text-sm text-muted-foreground">Non-GMO, vegan, gluten-free</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-yellow-200 text-center">
-                <CardContent className="p-4 md:p-6">
-                  <div className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-yellow-500 flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <span className="text-white text-lg md:text-2xl">🏭</span>
-                  </div>
-                  <h5 className="font-bold text-base md:text-lg mb-2">FDA Registered</h5>
-                  <p className="text-xs md:text-sm text-muted-foreground">Made in certified facility</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200 text-center">
-                <CardContent className="p-4 md:p-6">
-                  <div className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-green-500 flex items-center justify-center mx-auto mb-3 md:mb-4">
-                    <span className="text-white text-lg md:text-2xl">✅</span>
-                  </div>
-                  <h5 className="font-bold text-base md:text-lg mb-2">Proven Results</h5>
-                  <p className="text-xs md:text-sm text-muted-foreground">112,847+ satisfied customers</p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
 
-
-
-        {/* Benefits Section */}
-        <section className="w-full py-16 md:py-24 lg:py-32 border-t border-gray-100 bg-white">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-gray-900 via-primary to-blue-600 bg-clip-text text-transparent">
-                Why Choose Our Supplements?
+        {/* Customer Success Stories */}
+        <section className="py-20 bg-white">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Real Success Stories from Real Americans
               </h2>
-              <p className="max-w-[800px] text-muted-foreground md:text-xl">
-                Our premium supplements are crafted with care using the highest quality ingredients to deliver
-                exceptional results for your health and wellness journey.
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Join thousands of satisfied customers who have transformed their health and lives 
+                with our premium supplements.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-              <Card className="bg-white border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center mb-6">
-                    <Check className="h-7 w-7 text-blue-700" />
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex mb-4">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star key={star} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">Science-Backed Formulas</h3>
-                  <p className="text-muted-foreground">
-                    All our formulations are based on scientific research and developed by a team of health experts and
-                    nutritionists.
+                  <p className="text-gray-600 mb-4 italic">
+                    "I lost 25 pounds in just 8 weeks with KeySlim Drops! The appetite control 
+                    is incredible - I no longer crave junk food, and my energy levels are through 
+                    the roof. This product really works!"
                   </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                      <span className="text-orange-600 font-semibold">JL</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Jennifer L.</p>
+                      <p className="text-sm text-gray-500">Los Angeles, CA</p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-white border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="h-14 w-14 rounded-full bg-green-100 flex items-center justify-center mb-6">
-                    <Check className="h-7 w-7 text-green-700" />
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex mb-4">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star key={star} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">Premium Ingredients</h3>
-                  <p className="text-muted-foreground">
-                    We source only the highest quality, purest ingredients that meet our strict standards for potency
-                    and purity.
+                  <p className="text-gray-600 mb-4 italic">
+                    "ProDentim changed my oral health completely! My teeth feel stronger, 
+                    my gums are healthier, and my breath is fresher. I've never been more 
+                    confident about my smile."
                   </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-600 font-semibold">TF</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Theo F.</p>
+                      <p className="text-sm text-gray-500">Chicago, IL</p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-white border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="h-14 w-14 rounded-full bg-purple-100 flex items-center justify-center mb-6">
-                    <Check className="h-7 w-7 text-purple-700" />
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex mb-4">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star key={star} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    ))}
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">FDA-Registered Facilities</h3>
-                  <p className="text-muted-foreground">
-                    All our supplements are manufactured in FDA-registered facilities following strict Good
-                    Manufacturing Practices.
+                  <p className="text-gray-600 mb-4 italic">
+                    "PrimeBiome has completely transformed my skin! My complexion is clearer, 
+                    more radiant, and I've noticed a significant improvement in my digestion. 
+                    The gut-skin connection is real!"
                   </p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-green-600 font-semibold">AL</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-900">Amanda L.</p>
+                      <p className="text-sm text-gray-500">San Francisco, CA</p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
+            </div>
 
-              <Card className="bg-white border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="h-14 w-14 rounded-full bg-amber-100 flex items-center justify-center mb-6">
-                    <Check className="h-7 w-7 text-amber-700" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3">Third-Party Tested</h3>
-                  <p className="text-muted-foreground">
-                    Every batch undergoes rigorous third-party testing to ensure purity, potency, and safety for your
-                    peace of mind.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="text-center mt-8">
+              <Button variant="outline" size="lg" asChild>
+                <Link href="/testimonials">
+                  Read More Success Stories
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
 
-              <Card className="bg-white border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="h-14 w-14 rounded-full bg-rose-100 flex items-center justify-center mb-6">
-                    <Check className="h-7 w-7 text-rose-700" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3">60-Day Guarantee</h3>
-                  <p className="text-muted-foreground">
-                    Our 60-day money-back guarantee ensures you can try our products risk-free and experience the
-                    benefits yourself.
-                  </p>
-                </CardContent>
-              </Card>
+        {/* Why Choose  BEAUTY REALM */}
+        <section className="py-20 bg-gray-50">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Why Choose  BEAUTY REALM Supplements?
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                We're committed to providing the highest quality health supplements backed by science 
+                and trusted by thousands of Americans.
+              </p>
+            </div>
 
-              <Card className="bg-white border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="h-14 w-14 rounded-full bg-sky-100 flex items-center justify-center mb-6">
-                    <Check className="h-7 w-7 text-sky-700" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-3">Expert Support</h3>
-                  <p className="text-muted-foreground">
-                    Our dedicated team of health experts is available to answer your questions and provide personalized
-                    guidance.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Award className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Premium Quality</h3>
+                <p className="text-gray-600">
+                  Every ingredient is carefully selected and tested to ensure the highest standards 
+                  of purity and effectiveness.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="h-8 w-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Science-Backed</h3>
+                <p className="text-gray-600">
+                  Our formulas are developed based on clinical research and proven to deliver 
+                  real, measurable results.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Heart className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Customer Focused</h3>
+                <p className="text-gray-600">
+                  Your success is our success. We're here to support your health journey 
+                  every step of the way.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <TrendingUp className="h-8 w-8 text-orange-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Proven Results</h3>
+                <p className="text-gray-600">
+                  Thousands of customers have experienced life-changing results with our 
+                  premium supplements.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -822,157 +888,48 @@ export default function Home() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary/10 via-white to-blue-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <Badge className="bg-primary/20 text-primary hover:bg-primary/20 border-none px-3 py-1.5">
-                SPECIAL OFFER
-              </Badge>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-gray-900 via-primary to-blue-600 bg-clip-text text-transparent">
-                Start Your Health Journey Today!
-              </h2>
-              <p className="max-w-[800px] text-muted-foreground md:text-xl">
-                Join thousands of satisfied customers with ProDentim and our premium supplements. Limited-time offer
-                available now!
-              </p>
+        <section className="py-20 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
+          <div className="container px-4 md:px-6 mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Start Your Health Transformation Today
+            </h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Join thousands of Americans who have already improved their health and lives 
+              with our premium supplements. Choose the product that fits your needs.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Button 
+                size="lg" 
+                className="bg-white text-blue-600 hover:bg-gray-100 shadow-lg"
+                asChild
+              >
+                <Link href="/compare">Compare All Products</Link>
+              </Button>
+              <Button variant="outline" size="lg" className="border-white hover:bg-white hover:text-blue-600">
+                <Link href="/testimonials">Read Customer Reviews</Link>
+              </Button>
+            </div>
 
-              <div className="w-full max-w-md mt-8">
-                <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-xl">
-                  <h3 className="text-2xl font-bold mb-4 text-center">Limited-Time Offer</h3>
-                  <div className="mb-6">
-                    <CountdownTimer hours={23} minutes={59} seconds={59} />
-                  </div>
-                  <div className="space-y-4">
-                    <div className="bg-blue-50 p-4 rounded-lg mb-6">
-                      <p className="font-medium text-center"> Order 6 Bottles and Get 2  E-Books!</p>
-                      <p className="text-sm text-muted-foreground text-center">Plus Free Shipping</p>
-                    </div>
-                    <Button
-                      className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-                      size="lg"
-                      asChild
-                    >
-                      <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623">Shop ProDentim Now</Link>
-                    </Button>
-                    <div className="grid grid-cols-3 gap-4 mt-4">
-                      <Button variant="outline" size="lg" asChild>
-                        <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623">PrimeBiome</Link>
-                      </Button>
-                      <Button variant="outline" size="lg" asChild>
-                        <Link href="https://getkeyslimdrops.cc/vsl1/">KeySlim</Link>
-                      </Button>
-                      <Button variant="outline" size="lg" asChild>
-                        <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623">FemiPro</Link>
-                      </Button>
-                    </div>
-                    <div className="flex items-center justify-center gap-2 mt-4">
-                      <div className="flex">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                      </div>
-                      <span className="text-sm">5.0 (95,000+ reviews)</span>
-                    </div>
-                    <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
-                      <Badge variant="outline" className="bg-white flex items-center gap-1">
-                        <Check className="h-3 w-3 text-green-600" />
-                        <span className="text-xs">Money-Back Guarantee</span>
-                      </Badge>
-                      <Badge variant="outline" className="bg-white flex items-center gap-1">
-                        <Check className="h-3 w-3 text-green-600" />
-                        <span className="text-xs">Secure Checkout</span>
-                      </Badge>
-                      <Badge variant="outline" className="bg-white flex items-center gap-1">
-                        <Check className="h-3 w-3 text-green-600" />
-                        <span className="text-xs">Fast Shipping</span>
-                      </Badge>
-                    </div>
-                  </div>
-                </div>
+            <div className="flex flex-wrap justify-center gap-6 text-blue-100">
+              <div className="flex items-center gap-2">
+                <Check className="h-5 w-5" />
+                <span>Free Shipping</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="h-5 w-5" />
+                <span>60-Day Money Back</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="h-5 w-5" />
+                <span>Premium Quality</span>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="w-full border-t bg-white py-12 md:py-16 lg:py-20">
-        <div className="container px-6 md:px-8 lg:px-12">
-          {/* About Us Section - Separated and with horizontal text flow */}
-          <div className="mb-8 pb-8 border-b">
-            <h3 className="text-xl font-bold mb-4">About Us</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Note: Results may vary from Person to Person. The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or endorsements of our website,If you click a merchant link and buy a product or service on their website, we may be paid a fee by the merchant.
-              </p>
-            </div>
-          </div>
-          
-          {/* Main Footer Content */}
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                BeautyRealm
-              </h3>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Premium health supplements for oral health, skin care, and bladder wellness. Crafted with the highest
-                quality ingredients for optimal results.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <Link href='https://store.beautyrealmart.com/contact-us/'>
-                <h3 className="text-xl font-bold">Contact Us</h3>
-              </Link>
-              <p className="text-base text-muted-foreground">Email: elite@beautyrealmart.com</p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="https://prodentim24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  ProDentim
-                </Link>
-                <Link href="http://primebiome24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  PrimeBiome
-                </Link>
-                <Link href="https://getkeyslimdrops.cc/vsl1/" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  KeySlim Drops
-                </Link>
-                <Link href="http://femipro24.com/text.php#aff=lifestylemedicine623" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  FemiPro
-                </Link>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold">Legal</h3>
-              <div className="grid grid-cols-2 gap-2">
-                <Link href="https://beautyrealmart.com/privacy-policy/" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  Privacy Policy
-                </Link>
-                <Link href="https://beautyrealmart.com/terms-of-service/" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  Terms of Service
-                </Link>
-                <Link href="https://beautyrealmart.com/return-policy/" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  Return Policy
-                </Link>
-                {/* <Link href="https://store.beautyrealmart.com/disclaimer/" className="text-base text-muted-foreground hover:text-primary transition-colors">
-                  Disclaimer
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} BeautyRealm. All rights reserved.
-            </p>
-            <div className="flex items-center gap-6 mt-2 md:mt-0">
-                <img src="/logo.png" alt="Payment Method" className="w-24 h-24" />
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

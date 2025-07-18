@@ -2,5 +2,25 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://prodentim_medcines.beautyrealmart.com/sitemap.xml 
+# Sitemap
+Sitemap: https://prodentim.beautyrealmart.com/sitemap.xml
+
+# Allow all pages
+Allow: /prodentim
+Allow: /keyslim
+Allow: /primebiome
+Allow: /femipro
+Allow: /about
+Allow: /testimonials
+Allow: /compare
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /return-policy
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Crawl delay
+Crawl-delay: 1 
