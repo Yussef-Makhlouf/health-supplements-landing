@@ -241,7 +241,7 @@ export default function ProDentimPage() {
         </div>
       </section>
 
-      {/* Before and After Results */}
+      {/* Before and After Results
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center mb-16">
@@ -261,14 +261,14 @@ export default function ProDentimPage() {
                   <div className="text-center flex-1">
                     <h4 className="text-sm font-semibold text-red-600 mb-2">BEFORE</h4>
                     <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-2 flex items-center justify-center">
-                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                  <Image src="/prodentim_before.jpg" alt="ProDentim" width={100} height={100} />
                     </div>
                     <p className="text-xs text-gray-600">Gum Inflammation</p>
                   </div>
                   <div className="text-center flex-1">
                     <h4 className="text-sm font-semibold text-green-600 mb-2">AFTER</h4>
                     <div className="w-24 h-24 bg-green-100 rounded-full mx-auto mb-2 flex items-center justify-center">
-                  <Image src="/prodentim.png" alt="ProDentim" width={100} height={100} />
+                  <Image src="/prodentim_after.jpg" alt="ProDentim" width={100} height={100} />
                     </div>
                     <p className="text-xs text-gray-600">Healthy Gums</p>
                   </div>
@@ -384,8 +384,26 @@ export default function ProDentimPage() {
             </div>
           </div>
         </div>
-      </section>
-
+      </section> */}
+         <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Verified Buyer Testimonials</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <Image src="/prodentim_before.jpg" alt="ProDentim" width={100} height={100} />
+                                      </div>
+                  <h4 className="font-semibold text-gray-900 mb-2 text-center">Before ProDentim</h4>
+                  <p className="text-sm text-gray-600 text-center">Struggling with weight loss, low energy, cravings</p>
+                </div>
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <Image src="/prodentim_after.jpg" alt="ProDentim" width={100} height={100} />
+                  </div>
+                  <h4 className="font-semibold text-gray-900 mb-2 text-center">After ProDentim</h4>
+                  <p className="text-sm text-gray-600 text-center">Achieved weight loss goals, high energy, confidence</p>
+                </div>
+              </div>
+            </div>
       {/* Customer Reviews */}
       <section id="reviews" className="py-20 bg-gray-50">
         <div className="container px-4 md:px-6 mx-auto">

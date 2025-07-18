@@ -181,7 +181,7 @@ export default function PrimeBiomePage() {
             </div>
 
             {/* Visual Placeholder: How It Works Infographic */}
-            <div className="mt-16 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            {/* <div className="mt-16 bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">How PrimeBiome Works</h3>
                 <p className="text-gray-600">See the transformation in gut health and skin radiance that thousands of Americans have experienced</p>
@@ -189,7 +189,7 @@ export default function PrimeBiomePage() {
               <div className="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center">
                 <span className="text-gray-500">Infographic: Gut-Skin Connection Process</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -493,7 +493,7 @@ export default function PrimeBiomePage() {
             </div>
 
             {/* Visual Placeholder: Verified Buyer Testimonials */}
-            <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
+            {/* <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Verified Buyer Testimonials</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-gray-50 rounded-lg p-6">
@@ -511,7 +511,7 @@ export default function PrimeBiomePage() {
                   <p className="text-sm text-gray-600 text-center">Healthy gut, radiant skin, improved energy</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 

@@ -181,7 +181,7 @@ export default function FemiProPage() {
             </div>
 
             {/* Visual Placeholder: How It Works Infographic */}
-            <div className="mt-16 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+            {/* <div className="mt-16 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">How FemiPro Works</h3>
                 <p className="text-gray-600">See the transformation in women's health that thousands of Americans have experienced</p>
@@ -189,7 +189,7 @@ export default function FemiProPage() {
               <div className="w-full h-64 bg-gray-100 rounded-lg flex items-center justify-center">
                 <span className="text-gray-500">Infographic: Women's Health Support Process</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -490,23 +490,23 @@ export default function FemiProPage() {
               </Card>
             </div>
 
-            {/* Visual Placeholder: Verified Buyer Testimonials */}
+            {/* Visual: Skin Radiance After Hormonal Balance */}
             <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Verified Buyer Testimonials</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Skin Radiance After Hormonal Balance</h3>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-gray-500 text-sm">Before Photo</span>
+                  <div className="w-100 h-100 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <Image src="/femipro_before.jpg" alt="Before FemiPro" width={100} height={100} />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2 text-center">Before FemiPro</h4>
-                  <p className="text-sm text-gray-600 text-center">Bladder control issues, discomfort, low confidence</p>
+                  <h4 className="font-semibold text-gray-900 mb-2 text-center">Before Using the Product</h4>
+                  <p className="text-sm text-gray-600 text-center">Dull skin, fatigue, hormonal imbalance</p>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-6">
-                  <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-gray-500 text-sm">After Photo</span>
+                  <div className="w-100 h-100 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <Image src="/femipro_after.jpg" alt="After FemiPro" width={100} height={100} />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2 text-center">After FemiPro</h4>
-                  <p className="text-sm text-gray-600 text-center">Improved bladder control, comfort, confidence</p>
+                  <h4 className="font-semibold text-gray-900 mb-2 text-center">After Using the Product</h4>
+                  <p className="text-sm text-gray-600 text-center">Radiant skin, natural glow, improved hormonal balance</p>
                 </div>
               </div>
             </div>

@@ -104,7 +104,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-300">support@beautyrealmart.com</span>
+                <span className="text-gray-300">elite@beautyrealmart.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-gray-400" />
@@ -115,9 +115,7 @@ export default function Footer() {
                 <span className="text-gray-300">United States</span>
               </div>
             </div>
-            <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
-              Contact Support
-            </Button>
+ 
           </div>
         </div>
       </div>
