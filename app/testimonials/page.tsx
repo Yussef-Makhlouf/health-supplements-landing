@@ -509,14 +509,14 @@ export default function TestimonialsPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-lg p-6 text-center">
                     <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">Before Photo</span>
+                      <Image src="/prodentim_before.jpg" alt="Before ProDentim" width={100} height={100} />
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">Before ProDentim</h4>
                     <p className="text-sm text-gray-600">Gum sensitivity, bad breath, weak enamel</p>
                   </div>
                   <div className="bg-white rounded-lg p-6 text-center">
                     <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">After Photo</span>
+                      <Image src="/prodentim_after.jpg" alt="After ProDentim" width={100} height={100} />
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">After ProDentim</h4>
                     <p className="text-sm text-gray-600">Healthy gums, fresh breath, strong teeth</p>
@@ -528,15 +528,15 @@ export default function TestimonialsPage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">KeySlim Drops Results</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-white rounded-lg p-6 text-center">
-                    <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">Before Photo</span>
+                    <div className="w-100 h-100 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                      <Image src="/keyslim_before.jpg" alt="Before KeySlim" width={100} height={100} />
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">Before KeySlim</h4>
                     <p className="text-sm text-gray-600">Struggling with weight loss, low energy</p>
                   </div>
                   <div className="bg-white rounded-lg p-6 text-center">
-                    <div className="w-32 h-32 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">After Photo</span>
+                    <div className="w-100 h-100 bg-gray-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                      <Image src="/keyslim_after.jpg" alt="After KeySlim" width={100} height={100} />
                     </div>
                     <h4 className="font-semibold text-gray-900 mb-2">After KeySlim</h4>
                     <p className="text-sm text-gray-600">Achieved weight loss goals, high energy</p>

@@ -360,12 +360,12 @@ export default function Home() {
                 </div>
 
                 {/* Visual Placeholder: How It Works Infographic */}
-                <div className="bg-white rounded-xl p-6 shadow-lg">
+                {/* <div className="bg-white rounded-xl p-6 shadow-lg">
                   <h4 className="font-semibold text-lg text-gray-900 mb-4 text-center">How KeySlim Drops Works</h4>
                   <div className="w-full h-48 bg-gray-100 rounded-lg flex items-center justify-center">
                     <span className="text-gray-500">Infographic: 3-Stage Weight Loss Process</span>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
