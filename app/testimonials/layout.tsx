@@ -2,6 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import CookiePolicyModal from "@/components/cookie-policy-modal"
+import GoogleAnalytics from "@/components/google-analytics"
+import GoogleTagManager from "@/components/google-tag-manager"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,14 +11,14 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://prodentim.beautyrealmart.com'),
+  metadataBase: new URL('https://beautyrealmart.com'),
   title: "Customer Reviews & Testimonials |  BEAUTY REALM Supplements | Real Results from Real Customers",
   description: 'Read authentic customer reviews and testimonials for ProDentim, KeySlim Drops, PrimeBiome, and FemiPro. Real results from 50,000+ satisfied customers. 4.8/5 average rating.',
   keywords: "customer reviews, testimonials, ProDentim reviews, KeySlim Drops reviews, PrimeBiome reviews, FemiPro reviews, customer testimonials, real customer results, before and after, weight loss testimonials, oral health reviews, gut health testimonials, women's health reviews, supplement reviews, customer success stories, product reviews, health supplement testimonials, weight loss success stories, oral health success stories, gut health success stories",
   openGraph: {
     title: 'Customer Reviews & Testimonials |  BEAUTY REALM Supplements',
     description: 'Read authentic customer reviews and testimonials for ProDentim, KeySlim Drops, PrimeBiome, and FemiPro. Real results from 50,000+ satisfied customers.',
-    url: 'https://prodentim.beautyrealmart.com/testimonials',
+    url: 'https://beautyrealmart.com/testimonials',
     siteName: ' BEAUTY REALM Supplements',
     images: [
       {
@@ -61,7 +63,7 @@ export default function TestimonialsLayout({
               "@type": "WebPage",
               "name": "Customer Reviews & Testimonials",
               "description": "Read authentic customer reviews and testimonials for  BEAUTY REALM Supplements products including ProDentim, KeySlim Drops, PrimeBiome, and FemiPro.",
-              "url": "https://prodentim.beautyrealmart.com/testimonials",
+              "url": "https://beautyrealmart.com/testimonials",
               "mainEntity": {
                 "@type": "ItemList",
                 "itemListElement": [
@@ -139,6 +141,8 @@ export default function TestimonialsLayout({
         />
       </head>
       <body className={inter.className}>
+        <GoogleTagManager />
+        <GoogleAnalytics />
         {children}
         <CookiePolicyModal />
       </body>

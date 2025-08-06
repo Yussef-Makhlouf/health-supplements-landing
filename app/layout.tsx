@@ -2,6 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import CookiePolicyModal from "@/components/cookie-policy-modal"
+import GoogleAnalytics from "@/components/google-analytics"
+import GoogleTagManager from "@/components/google-tag-manager"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,14 +11,14 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://prodentim.beautyrealmart.com'),
+  metadataBase: new URL('https://beautyrealmart.com'),
   title: "ProDentim | Premium Oral Health Supplements & Wellness Products",
   description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health. 100% natural, non-GMO, with a 60-day money-back guarantee.',
   keywords: "ProDentim,ProDentim, oral probiotic supplement, PrimeBiome Glow, FemiPro, healthy teeth and gums, radiant skin, bladder health supplement, natural probiotics, oral health, probiotic supplement, dental health, gum health, PrimeBiome, FemiPro, wellness supplements, premium health supplements, natural ingredients",
   openGraph: {
     title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums |  BEAUTY REALM',
     description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health.',
-    url: 'https://prodentim.beautyrealmart.com',
+    url: 'beautyrealmart.com',
     siteName: ' BEAUTY REALM Supplements',
     images: [
       {
@@ -105,6 +107,8 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+          <GoogleTagManager />
+          <GoogleAnalytics />
           {children}
           <CookiePolicyModal />
       </body>

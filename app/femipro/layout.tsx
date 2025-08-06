@@ -2,6 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import CookiePolicyModal from "@/components/cookie-policy-modal"
+import GoogleAnalytics from "@/components/google-analytics"
+import GoogleTagManager from "@/components/google-tag-manager"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -145,6 +147,8 @@ export default function FemiProLayout({
         />
       </head>
       <body className={inter.className}>
+        <GoogleTagManager />
+        <GoogleAnalytics />
         {children}
         <CookiePolicyModal />
       </body>

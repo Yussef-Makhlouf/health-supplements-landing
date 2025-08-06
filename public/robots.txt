@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://prodentim.beautyrealmart.com/sitemap.xml
+Sitemap: https://beautyrealmart.com/sitemap.xml
 
 # Allow all pages
 Allow: /prodentim

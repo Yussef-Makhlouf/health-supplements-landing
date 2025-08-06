@@ -2,6 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import CookiePolicyModal from "@/components/cookie-policy-modal"
+import GoogleAnalytics from "@/components/google-analytics"
+import GoogleTagManager from "@/components/google-tag-manager"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -61,7 +63,7 @@ export default function CompareLayout({
               "@type": "WebPage",
               "name": "Product Comparison Guide",
               "description": "Compare ProDentim, KeySlim Drops, PrimeBiome, and FemiPro supplements to find the perfect health solution for your needs.",
-              "url": "https://prodentim.beautyrealmart.com/compare",
+              "url": "https://beautyrealmart.com/compare",
               "mainEntity": {
                 "@type": "ItemList",
                 "itemListElement": [
@@ -118,6 +120,8 @@ export default function CompareLayout({
         />
       </head>
       <body className={inter.className}>
+        <GoogleTagManager />
+        <GoogleAnalytics />
         {children}
         <CookiePolicyModal />
       </body>

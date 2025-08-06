@@ -2,21 +2,22 @@ import type React from "react"
 import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import CookiePolicyModal from "@/components/cookie-policy-modal"
-
+import GoogleTagManager from "@/components/google-tag-manager"
+import GoogleAnalytics from "@/components/google-analytics"
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 })
 
 export const metadata = {
-  metadataBase: new URL('https://prodentim.beautyrealmart.com'),
+  metadataBase: new URL('https://beautyrealmart.com'),
   title: "ProDentim Review 2025 – Does It Really Work? | Best Oral Probiotic Supplement",
   description: 'ProDentim review 2025: Discover if this oral probiotic supplement really works for healthy teeth and gums. Read customer reviews, benefits, and get 50% off today. 3.5 billion CFUs, natural ingredients, 60-day guarantee.',
   keywords: "ProDentim review 2025, ProDentim oral probiotic, ProDentim does it work, ProDentim customer reviews, oral health supplement, dental probiotic, healthy teeth and gums, bad breath treatment, gum health supplement, oral microbiome, probiotic supplement for teeth, ProDentim ingredients, ProDentim side effects, ProDentim results, ProDentim before and after, oral health probiotic, dental health supplement, fresh breath supplement, gum disease treatment, oral hygiene supplement",
   openGraph: {
     title: 'ProDentim Review 2025 – Does It Really Work? | Best Oral Probiotic',
     description: 'ProDentim review 2025: Discover if this oral probiotic supplement really works for healthy teeth and gums. Read customer reviews, benefits, and get 50% off today.',
-    url: 'https://prodentim.beautyrealmart.com/prodentim',
+    url: 'https://beautyrealmart.com/prodentim',
     siteName: ' BEAUTY REALM Supplements',
     images: [
       {
@@ -140,6 +141,8 @@ export default function ProDentimLayout({
         />
       </head>
       <body className={inter.className}>
+        <GoogleTagManager />
+        <GoogleAnalytics />
         {children}
         <CookiePolicyModal />
       </body>

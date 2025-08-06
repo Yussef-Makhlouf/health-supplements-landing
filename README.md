@@ -795,14 +795,14 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://prodentim.beautyrealmart.com'),
+  metadataBase: new URL('https://beautyrealmart.com'),
   title: "ProDentim | Premium Oral Health Supplements & Wellness Products",
   description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health. 100% natural, non-GMO, with a 60-day money-back guarantee.',
   keywords: "ProDentim,ProDentim, oral probiotic supplement, PrimeBiome Glow, FemiPro, healthy teeth and gums, radiant skin, bladder health supplement, natural probiotics, oral health, probiotic supplement, dental health, gum health, PrimeBiome, FemiPro, wellness supplements, premium health supplements, natural ingredients",
   openGraph: {
     title: 'ProDentim – Best Oral Probiotic for Healthy Teeth & Gums |  BEAUTY REALM',
     description: 'Shop ProDentim, the #1 oral probiotic for healthy teeth and gums, plus PrimeBiome Glow for radiant skin and FemiPro for bladder health.',
-    url: 'https://prodentim.beautyrealmart.com',
+    url: 'https://beautyrealmart.com',
     siteName: ' BEAUTY REALM Supplements',
     images: [
       {
@@ -1868,14 +1868,14 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://prodentim.beautyrealmart.com'),
+  metadataBase: new URL('https://beautyrealmart.com'),
   title: "About  BEAUTY REALM Supplements | Premium Health & Wellness Products | Trusted by Thousands",
   description: 'Learn about  BEAUTY REALM Supplements - a trusted provider of premium health supplements including ProDentim, KeySlim Drops, PrimeBiome, and FemiPro. Quality ingredients, science-backed formulas, 60-day guarantee.',
   keywords: " BEAUTY REALM Supplements, about us, premium health supplements, natural supplements, quality supplements, trusted supplement company, ProDentim, KeySlim Drops, PrimeBiome, FemiPro, health supplement company, natural health products, wellness supplements, supplement quality, customer reviews, money back guarantee, GMP certified, third party testing, premium ingredients",
   openGraph: {
     title: 'About  BEAUTY REALM Supplements | Premium Health & Wellness Products',
     description: 'Learn about  BEAUTY REALM Supplements - a trusted provider of premium health supplements including ProDentim, KeySlim Drops, PrimeBiome, and FemiPro.',
-    url: 'https://prodentim.beautyrealmart.com/about',
+    url: 'https://beautyrealmart.com/about',
     siteName: ' BEAUTY REALM Supplements',
     images: [
       {
@@ -1920,15 +1920,15 @@ export default function AboutLayout({
               "@type": "Organization",
               "name": " BEAUTY REALM Supplements",
               "description": " BEAUTY REALM Supplements is a trusted provider of premium health supplements including ProDentim, KeySlim Drops, PrimeBiome, and FemiPro. We are committed to providing high-quality, natural supplements backed by science.",
-              "url": "https://prodentim.beautyrealmart.com",
-              "logo": "https://prodentim.beautyrealmart.com/logo.png",
+              "url": "https://beautyrealmart.com",
+              "logo": "https://beautyrealmart.com/logo.png",
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "customer service",
                 "availableLanguage": "English"
               },
               "sameAs": [
-                "https://prodentim.beautyrealmart.com"
+                "https://beautyrealmart.com"
               ],
               "aggregateRating": {
                 "@type": "AggregateRating",
@@ -2469,7 +2469,7 @@ export default function CompareLayout({
               "@type": "WebPage",
               "name": "Product Comparison Guide",
               "description": "Compare ProDentim, KeySlim Drops, PrimeBiome, and FemiPro supplements to find the perfect health solution for your needs.",
-              "url": "https://prodentim.beautyrealmart.com/compare",
+              "url": "https://beautyrealmart.com/compare",
               "mainEntity": {
                 "@type": "ItemList",
                 "itemListElement": [
@@ -5819,14 +5819,14 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://prodentim.beautyrealmart.com'),
+  metadataBase: new URL('https://beautyrealmart.com'),
   title: "ProDentim Review 2025 – Does It Really Work? | Best Oral Probiotic Supplement",
   description: 'ProDentim review 2025: Discover if this oral probiotic supplement really works for healthy teeth and gums. Read customer reviews, benefits, and get 50% off today. 3.5 billion CFUs, natural ingredients, 60-day guarantee.',
   keywords: "ProDentim review 2025, ProDentim oral probiotic, ProDentim does it work, ProDentim customer reviews, oral health supplement, dental probiotic, healthy teeth and gums, bad breath treatment, gum health supplement, oral microbiome, probiotic supplement for teeth, ProDentim ingredients, ProDentim side effects, ProDentim results, ProDentim before and after, oral health probiotic, dental health supplement, fresh breath supplement, gum disease treatment, oral hygiene supplement",
   openGraph: {
     title: 'ProDentim Review 2025 – Does It Really Work? | Best Oral Probiotic',
     description: 'ProDentim review 2025: Discover if this oral probiotic supplement really works for healthy teeth and gums. Read customer reviews, benefits, and get 50% off today.',
-    url: 'https://prodentim.beautyrealmart.com/prodentim',
+    url: 'https://beautyrealmart.com/prodentim',
     siteName: ' BEAUTY REALM Supplements',
     images: [
       {
